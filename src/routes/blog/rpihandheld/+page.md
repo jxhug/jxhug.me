@@ -14,7 +14,7 @@
 
 ## Step 2: Case Assembly
 
-My case is a stacking case, and on the Amazon page they provide this nice diagram on how to properly stack the layers:
+The case I'm using is a stacking case, and on the Amazon page they provide this nice diagram on how to properly stack the layers:
 <img src="https://m.media-amazon.com/images/S/aplus-media-library-service-media/85a2c160-9580-41f9-8f63-f1f02c62de9a.__CR0,0,970,600_PT0_SX970_V1___.jpg" width="750">
 
 Once you've properly stacked the case it should look like this: 

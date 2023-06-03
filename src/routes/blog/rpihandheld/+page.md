@@ -39,7 +39,7 @@ Take your Xbox Controller and attach the mount to it. It should look like this a
 ## Step 5: Power Bank Setup
 
 Now at this point, we can attach the Raspberry Pi to the mount and be done. There is no way to take this around with us though without it always being plugged in, so it is not very functional. If you are just going to use this is your room, you can stop here with a lighter and better looking contraption. 
-<img src="/images/blog/.jpeg" width="750">
+<img src="/images/blog/no power bank.webp" width="750">
 
 If you actually want to take this out with you, continue the guide. 
 

@@ -233,8 +233,26 @@
     }
     h3 {
         font-family: monospace;
-        font-size: 1.5rem;
     }
+
+    @media screen and (min-width: 1200px) {
+        h3 { 
+            font-size: 1.5rem;
+        }
+    }
+
+    @media screen and (min-width: 1024px) {
+        h3 { 
+            font-size: 1.4rem;
+        }
+    }
+
+    @media screen and (min-width: 768px) {
+        h3 { 
+            font-size: 1.3rem;
+        }
+    }
+
     .link {
         color: #ff6161;
         text-decoration: none;

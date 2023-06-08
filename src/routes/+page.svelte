@@ -1,322 +1,46 @@
-<script>
-    let m = { x: 0, y: 0 };
-    /**
-	 * @type {HTMLDivElement}
-	 */
-    // let blob;
-
-    // onpointermove = function(e){
-    //     m.x = e.clientX;
-    //     m.y = e.clientY;
-    //     blob.style.left = m.x + "px";
-    //     blob.style.top = m.y + "px";
-    // }
-
+<script>    
 </script>
 
-<main>
-    <!-- <div bind:this={blob} id="blob"></div> -->
-    <div class="section" style="padding: 0% 0%;">
-        <h1>Hi,I'm <span class="gradient-red">jxhug</span></h1>
-        <h3>//scroll down ⬇️</h3>
-    </div>
-    <div class="section">
-        <h1>About Me</h1>
-        <h3>👋 Hi, I'm jxhug, a teenage web developer from the Bay Area!</h3>
-        <h3>⌨️ I mostly do front-end web development and game development.</h3>
-        <h3>📫 You can reach me at <a class="link" href="mailto:contact@jxhug.me">contact@jxhug.me</a></h3>
-        <h3>//a little more ⬇️</h3>
-    </div>
-    <div class="section">
-        <h1>My Skills</h1>
-        <div class="skills">
-            <!-- svelte-ignore a11y-click-events-have-key-events -->
-            <div class="skill" on:click={ () =>  {
-                window.open("https://svelte.dev/", "_blank");
-            }}>
-                <img class="logo" src="/images/svelte.png" alt="">
-                <h2 class="skill-text">Svelte</h2>
-            </div>
-            <!-- svelte-ignore a11y-click-events-have-key-events -->
-            <div class="skill" on:click={ () =>  {
-                window.open("https://developer.mozilla.org/en-US/docs/Web/HTML", "_blank");
-            }}>
-                <img class="logo" src="/images/html.png" alt="">
-                <h2 class="skill-text">HTML</h2>
-            </div>
-            <!-- svelte-ignore a11y-click-events-have-key-events -->
-            <div class="skill" on:click={ () =>  {
-                window.open("https://developer.mozilla.org/en-US/docs/Web/CSS", "_blank");
-            }}>
-                <img class="logo" src="/images/css.png" alt="">
-                <h2 class="skill-text">CSS</h2>
-            </div>
-            <!-- svelte-ignore a11y-click-events-have-key-events -->
-            <div class="skill" on:click={ () =>  {
-                window.open("https://developer.mozilla.org/en-US/docs/Web/javascript", "_blank");
-            }}>
-                <img class="logo" src="/images/js.png" alt="">
-                <h2 class="skill-text">Javascript</h2>
-            </div>
-            <!-- svelte-ignore a11y-click-events-have-key-events -->
-            <div class="skill" on:click={ () =>  {
-                window.open("https://tailwindcss.com", "_blank");
-            }}>
-                <img class="logo" src="/images/tailwind.png" alt="">
-                <h2 class="skill-text">Tailwind</h2>
-            </div>
-            <!-- svelte-ignore a11y-click-events-have-key-events -->
-            <div class="skill" on:click={ () =>  {
-                window.open("https://supabase.com", "_blank");
-            }}>
-                <img class="logo" src="/images/supabase.png" alt="">
-                <h2 class="skill-text">Supabase</h2>
-            </div>
-            <!-- svelte-ignore a11y-click-events-have-key-events -->
-            <div class="skill" on:click={ () =>  {
-                window.open("https://dotnet.microsoft.com/en-us/languages/csharp", "_blank");
-            }}>
-                <img class="logo" src="/images/cs.png" alt="">
-                <h2 class="skill-text">C#</h2>
-            </div>
-            <!-- svelte-ignore a11y-click-events-have-key-events -->
-            <div class="skill" on:click={ () =>  {
-                window.open("https://unity.com", "_blank");
-            }}>
-                <img class="logo" src="/images/unity.png" alt="">
-                <h2 class="skill-text">Unity</h2>
-            </div>
+
+<main class="font-apple overflow-hidden relative">
+    <div class="h-screen flex flex-col fixed z-10 justify-center translate-x-10">
+        <div class="space-y-3">
+            <button class="w-16 h-16 flex items-center justify-center rounded-full bg-offdarkhite text-white drop-shadow-ml transition-all hover:scale-105">
+                <svg class="fill-slate-600"
+                xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24"><path d="m21.743 12.331-9-10c-.379-.422-1.107-.422-1.486 0l-9 10a.998.998 0 0 0-.17 1.076c.16.361.518.593.913.593h2v7a1 1 0 0 0 1 1h3a1 1 0 0 0 1-1v-4h4v4a1 1 0 0 0 1 1h3a1 1 0 0 0 1-1v-7h2a.998.998 0 0 0 .743-1.669z"/></svg>
+            </button>
+            <button class="w-16 h-16 flex items-center justify-center rounded-full bg-offdarkhite text-white drop-shadow-ml transition-all hover:scale-105">
+                <svg class="fill-slate-600" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24"><path d="m7.375 16.781 1.25-1.562L4.601 12l4.024-3.219-1.25-1.562-5 4a1 1 0 0 0 0 1.562l5 4zm9.25-9.562-1.25 1.562L19.399 12l-4.024 3.219 1.25 1.562 5-4a1 1 0 0 0 0-1.562l-5-4zm-1.649-4.003-4 18-1.953-.434 4-18z"/></svg>
+            </button>
+            <button class="w-16 h-16 flex items-center justify-center rounded-full bg-offdarkhite text-white drop-shadow-ml transition-all hover:scale-105">
+                <svg class="fill-slate-600" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24"><path d="M21 2H6a2 2 0 0 0-2 2v3H2v2h2v2H2v2h2v2H2v2h2v3a2 2 0 0 0 2 2h15a1 1 0 0 0 1-1V3a1 1 0 0 0-1-1zm-8 2.999c1.648 0 3 1.351 3 3A3.012 3.012 0 0 1 13 11c-1.647 0-3-1.353-3-3.001 0-1.649 1.353-3 3-3zM19 18H7v-.75c0-2.219 2.705-4.5 6-4.5s6 2.281 6 4.5V18z"/></svg>
+            </button>
         </div>
-        <h3>//a little more ⬇️</h3>
-        <div class="section">
-            <h1>My Projects</h1>
-            <div class="projects">
-                <!-- svelte-ignore a11y-click-events-have-key-events -->
-                <div class="container" on:click={ () =>  {
-                    window.open("https://cacodemon-game.vercel.app", "_blank");
-                }}>
-                    <div class="card">
-                        <img class="project-image" src="/images/cacodemon.png" alt="">
-                    </div>
-                    <div>
-                        <h2><span class="gradient-red">Cacodemon</span> Game</h2>
-                        <p>A side scrolling DOOM game. Uses: <img src="/images/html.png" alt="HTML" class="project-language"><img src="/images/css.png" alt="CSS" class="project-language"><img src="/images/js.png" alt="Javascript" class="project-language"></p>
-                    </div>
+    </div>
+    <div class="relative">
+        <div class="h-screen">
+            <div class="bg-lightdesktopjames bg-cover h-screen">
+                <div class="flex flex-col translate-x-3/20 justify-center absolute inset-0">
                 </div>
-                <!-- svelte-ignore a11y-click-events-have-key-events -->
-                <div class="container" on:click={ () =>  {
-                    window.open("https://apps.apple.com/us/app/ultimate-tennis-quiz/id1641028778", "_blank");
-                }}>
-                    <div class="card">
-                        <img class="project-image" src="/images/utq.png" alt="">
-                    </div>
-                    <div>
-                        <h2><span class="gradient-green">Ultimate</span> Tennis Quiz</h2>
-                        <p>A tennis trivia game. Uses: <img src="/images/cs.png" alt="C#" class="project-language"><img src="/images/unity.png" alt="Unity" class="project-language"></p>
-                    </div>
-                </div>
-                <!-- svelte-ignore a11y-click-events-have-key-events -->
-                <div class="container" on:click={ () =>  {
-                    window.open("https://www.spigotmc.org/resources/biomerace.96241/", "_blank");
-                }}>
-                    <div class="card">
-                        <img class="project-image" src="/images/biomerace.png" alt="">
-                    </div>
-                    <div>
-                        <h2><span class="gradient-blue">Biome</span>Race</h2>
-                        <p>A race based Minecraft plugin. Uses: <img src="/images/java.png" alt="Java" class="project-language"></p>
-                    </div>
-                </div>
-                <!-- svelte-ignore a11y-click-events-have-key-events -->
-                <div class="container" on:click={ () =>  {
-                    window.open("https://www.spigotmc.org/resources/biomerace.96241/", "_blank");
-                }}>
-                    <div class="card">
-                        <img class="project-image" src="/images/phoenix.png" alt="">
-                    </div>
-                    <div>
-                        <h2><span class="gradient-orange">Phoenix</span></h2>
-                        <p>An open source game launcher. Uses: <img src="/images/swift.png" alt="Swift" class="project-language"></p>
+            </div>
+            <div class="absolute inset-0 bg-gradient-to-t from-darkwhite to-transparent pointer-events-none">
+                <div class="flex flex-col translate-x-3/20 justify-center h-screen">
+                    <div class="font-extrabold text-slate-600 text-8xl">
+                        <h1 class="">
+                            Hey there,
+                        </h1>
+                        <h1 class="">
+                            I'm
+                            <span class="bg-gradient animate-gradient-cycle bg-clip-text text-transparent bg-200%">James</span>
+                        </h1>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
+    <div class="relative h-screen bg-darkwhite">
+        
     </div>
 </main>
 
-<style>
-    /* #blob {
-        background: linear-gradient(90deg, salmon, #ff3b3b, crimson, salmon);
-        height: 300px;
-        aspect-ratio: 1;
-        position: fixed;
-        translate: -50% -50%;
-        border-radius: 50%;
-        animation: rotate 20s linear infinite;
-        filter: blur(200px);
-        z-index: -1;
-        opacity: .75;
-    } */
-    @keyframes rotate {
-        from {
-            transform: rotate(0deg);
-            transform: scale(1, 1);
-        }
 
-        33% {
-            transform: scale(1.5, 1);
-        }
-
-        66% {
-            transform: scale(1, 1.5);
-        }
-
-        to {
-            transform: rotate(360deg);
-            transform: scale(1, 1);
-        }
-    }
-    @keyframes background-pan {
-        from {
-            background-position: 0%;
-        }
-
-        to {
-            background-position: -200%;
-        }
-    }
-
-    .gradient-red {
-        background: linear-gradient(90deg, crimson, #ff3b3b, salmon, crimson);
-        background-size: 200%;
-        background-clip: text;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        animation: background-pan 3s ease infinite;
-    }
-    .gradient-green {
-        background: linear-gradient(90deg, green, #54984c, lightgreen, green);
-        background-size: 200%;
-        background-clip: text;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        animation: background-pan 3s ease infinite;
-    }
-    .gradient-blue {
-        background: linear-gradient(90deg, blue, #158bbd, lightblue, blue);
-        background-size: 200%;
-        background-clip: text;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        animation: background-pan 3s ease infinite;
-    }
-    .gradient-orange {
-        background: linear-gradient(90deg, orange, #ff5912, #ffd292, orange);
-        background-size: 200%;
-        background-clip: text;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        animation: background-pan 3s ease infinite;
-    }
-    .section {
-        height: 100vh;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding: 50% 0%;
-    }
-    h2 {
-        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-        font-size: 2rem;
-        font-weight: medium;
-    }
-    h3 {
-        font-family: monospace;
-    }
-
-    @media screen and (min-width: 1200px) {
-        h3 { 
-            font-size: 1.5rem;
-        }
-    }
-
-    @media screen and (min-width: 1024px) {
-        h3 { 
-            font-size: 1.4rem;
-        }
-    }
-
-    @media screen and (min-width: 768px) {
-        h3 { 
-            font-size: 1.3rem;
-        }
-    }
-
-    .link {
-        color: #ff6161;
-        text-decoration: none;
-    }
-    .skills {
-        display: grid;
-        grid-template-columns: 150px 150px 150px 150px;
-    }
-    .skill {
-        padding: 0px 20px;
-        transition: all .5s ease;
-        text-align: center;
-        align-items: center;
-        align-content: center;
-        justify-content: center;
-    }
-    .skill:hover {
-        transform: scale(1.1, 1.1);
-        cursor: pointer;
-    }
-    .logo {
-        height: 50px;
-    }
-
-    .project-image {
-        width: 100px;
-    }
-
-    .container {
-        display: flex;
-        align-items: center;
-        cursor: pointer;
-        transition: all .3s ease-in-out;
-    }
-
-    .container:hover {
-        transform: scale(1.1, 1.1);
-    }
-
-    .card {
-        width: 200px;
-        height: 200px;
-        margin-right: 20px;
-        border-radius: 30px;
-        display: block;
-        text-align: center;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .card img {
-        width: 100%;
-        height: 100%;
-        /* Make the image cover the entire card */
-        object-fit: contain;
-        transform: translateY(-5px);
-    }
-    .skill-text {
-        font-size: 1.5rem;
-        font-weight: 500;
-    }
-    .project-language {
-        height: 20px;
-        margin-left: 5px;
-        transform: translateY(3px);
-    }
-</style>

@@ -1,1 +1,3 @@
-https://jxhug.me
+## my personal website
+### made with sveltekit
+### deployed with vercel

@@ -3,7 +3,7 @@ export default {
   content: ['./src/**/*.{html,js,svelte,ts}'],
   theme: {
     extend: {
-        dropShadow: {
+        boxShadow: {
             'ml': '0px 4px 20px rgba(0, 0, 0, 0.35)',
         },
         translate: {

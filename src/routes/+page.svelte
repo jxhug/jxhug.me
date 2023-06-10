@@ -39,52 +39,52 @@
         <div class="space-y-3">
             <div class="flex items-center">
                 <div class="justify-center flex items-center" class:space-x-4={isHomeHovered ? 'space-x-4' : ''}>
-                    <button class="inline-flex p-4 items-center justify-center rounded-full bg-offdarkhite text-white shadow-ml transition-all hover:scale-105 ease-in flex-shrink-0" on:mouseenter={() => isHomeHovered = true} on:mouseleave={() => isHomeHovered = false} on:click={() => {
+                    <button class="inline-flex p-4 items-center justify-center rounded-full bg-offdarkwhite text-white dark:bg-offdarkergray dark:text-darkwhite shadow-ml transition-all hover:scale-105 ease-in flex-shrink-0" on:mouseenter={() => isHomeHovered = true} on:mouseleave={() => isHomeHovered = false} on:click={() => {
                         scrollToHome();
                     }}>
-                        <svg class="fill-slate-600"
+                        <svg class="fill-slate-600 dark:fill-darkwhite"
                         xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24"><path d="m21.743 12.331-9-10c-.379-.422-1.107-.422-1.486 0l-9 10a.998.998 0 0 0-.17 1.076c.16.361.518.593.913.593h2v7a1 1 0 0 0 1 1h3a1 1 0 0 0 1-1v-4h4v4a1 1 0 0 0 1 1h3a1 1 0 0 0 1-1v-7h2a.998.998 0 0 0 .743-1.669z"/></svg>
                     </button>
-                    <p class="inline-flex px-2.5 py-1.5 items-center justify-center rounded-full bg-offdarkhite shadow-ml text-slate-600 transition-all ease-in-out" class:opacity-0={!isHomeHovered} class:opacity-100={isHomeHovered}>
+                    <p class="inline-flex px-2.5 py-1.5 items-center justify-center rounded-full bg-offdarkwhite shadow-ml text-slate-600 dark:bg-offdarkergray dark:text-darkwhite transition-all ease-in-out" class:opacity-0={!isHomeHovered} class:opacity-100={isHomeHovered}>
                         Home
                     </p>
                 </div>
             </div>
             <div class="flex items-center">
                 <div class="justify-center flex items-center" class:space-x-4={isAboutHovered ? 'space-x-4' : ''}>
-                    <button class="inline-flex p-4 items-center justify-center rounded-full bg-offdarkhite text-white shadow-ml transition-all hover:scale-105 ease-in flex-shrink-0" on:mouseenter={() => isAboutHovered = true} on:mouseleave={() => isAboutHovered = false} on:click={() => {
+                    <button class="inline-flex p-4 items-center justify-center rounded-full bg-offdarkwhite dark:bg-offdarkergray dark:text-darkwhite shadow-ml transition-all hover:scale-105 ease-in flex-shrink-0" on:mouseenter={() => isAboutHovered = true} on:mouseleave={() => isAboutHovered = false} on:click={() => {
                         scrollToAbout();
                     }}>
-                        <svg class="fill-slate-600"
+                        <svg class="fill-slate-600 dark:fill-darkwhite"
                         xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24"><path d="M15 11h7v2h-7zm1 4h6v2h-6zm-2-8h8v2h-8zM4 19h10v-1c0-2.757-2.243-5-5-5H7c-2.757 0-5 2.243-5 5v1h2zm4-7c1.995 0 3.5-1.505 3.5-3.5S9.995 5 8 5 4.5 6.505 4.5 8.5 6.005 12 8 12z"/></svg>
                     </button>
-                    <p class="inline-flex px-2.5 py-1.5 items-center justify-center rounded-full bg-offdarkhite shadow-ml text-slate-600 transition-all ease-in-out" class:opacity-0={!isAboutHovered} class:opacity-100={isAboutHovered}>
+                    <p class="inline-flex px-2.5 py-1.5 items-center justify-center rounded-full bg-offdarkwhite shadow-ml text-slate-600 dark:bg-offdarkergray dark:text-darkwhite transition-all ease-in-out" class:opacity-0={!isAboutHovered} class:opacity-100={isAboutHovered}>
                         About
                     </p>
                 </div>
             </div>
             <div class="flex items-center">
                 <div class="justify-center flex items-center" class:space-x-4={isProjectsHovered ? 'space-x-4' : ''}>
-                    <button class="inline-flex p-4 items-center justify-center rounded-full bg-offdarkhite text-white shadow-ml transition-all hover:scale-105 ease-in flex-shrink-0" on:mouseenter={() => isProjectsHovered = true} on:mouseleave={() => isProjectsHovered = false} on:click={() => {
+                    <button class="inline-flex p-4 items-center justify-center rounded-full bg-offdarkwhite text-white dark:bg-offdarkergray dark:text-darkwhite shadow-ml transition-all hover:scale-105 ease-in flex-shrink-0" on:mouseenter={() => isProjectsHovered = true} on:mouseleave={() => isProjectsHovered = false} on:click={() => {
                         scrollToProjects();
                     }}>
-                        <svg class="fill-slate-600"
+                        <svg class="fill-slate-600 dark:fill-darkwhite"
                         xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24"><path d="m7.375 16.781 1.25-1.562L4.601 12l4.024-3.219-1.25-1.562-5 4a1 1 0 0 0 0 1.562l5 4zm9.25-9.562-1.25 1.562L19.399 12l-4.024 3.219 1.25 1.562 5-4a1 1 0 0 0 0-1.562l-5-4zm-1.649-4.003-4 18-1.953-.434 4-18z"/></svg>
                     </button>
-                    <p class="inline-flex px-2.5 py-1.5 items-center justify-center rounded-full bg-offdarkhite shadow-ml text-slate-600 transition-all ease-in-out" class:opacity-0={!isProjectsHovered} class:opacity-100={isProjectsHovered}>
+                    <p class="inline-flex px-2.5 py-1.5 items-center justify-center rounded-full bg-offdarkwhite shadow-ml text-slate-600 dark:bg-offdarkergray dark:text-darkwhite transition-all ease-in-out" class:opacity-0={!isProjectsHovered} class:opacity-100={isProjectsHovered}>
                         Projects
                     </p>
                 </div>
             </div>
             <div class="flex items-center">
                 <div class="justify-center flex items-center" class:space-x-4={isContactHovered ? 'space-x-4' : ''}>
-                    <button class="inline-flex p-4 items-center justify-center rounded-full bg-offdarkhite text-white shadow-ml transition-all hover:scale-105 ease-in flex-shrink-0" on:mouseenter={() => isContactHovered = true} on:mouseleave={() => isContactHovered = false} on:click={() => {
+                    <button class="inline-flex p-4 items-center justify-center rounded-full bg-offdarkwhite text-white dark:bg-offdarkergray dark:text-darkwhite shadow-ml transition-all hover:scale-105 ease-in flex-shrink-0" on:mouseenter={() => isContactHovered = true} on:mouseleave={() => isContactHovered = false} on:click={() => {
                         scrollToContact();
                     }}>
-                        <svg class="fill-slate-600"
+                        <svg class="fill-slate-600 dark:fill-darkwhite"
                         xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24"><path d="M21 2H6a2 2 0 0 0-2 2v3H2v2h2v2H2v2h2v2H2v2h2v3a2 2 0 0 0 2 2h15a1 1 0 0 0 1-1V3a1 1 0 0 0-1-1zm-8 2.999c1.648 0 3 1.351 3 3A3.012 3.012 0 0 1 13 11c-1.647 0-3-1.353-3-3.001 0-1.649 1.353-3 3-3zM19 18H7v-.75c0-2.219 2.705-4.5 6-4.5s6 2.281 6 4.5V18z"/></svg>
                     </button>
-                    <p class="inline-flex px-2.5 py-1.5 items-center justify-center rounded-full bg-offdarkhite shadow-ml text-slate-600 transition-all ease-in-out" class:opacity-0={!isContactHovered} class:opacity-100={isContactHovered}>
+                    <p class="inline-flex px-2.5 py-1.5 items-center justify-center rounded-full bg-offdarkwhite shadow-ml text-slate-600 dark:bg-offdarkergray dark:text-darkwhite transition-all ease-in-out" class:opacity-0={!isContactHovered} class:opacity-100={isContactHovered}>
                         Contact
                     </p>
                 </div>
@@ -93,13 +93,10 @@
     </div>
     <div bind:this={homeSection} class="relative">
         <div class="h-screen">
-            <div class="bg-lightdesktopjames bg-cover h-screen">
-                <div class="flex flex-col translate-x-3/20 justify-center absolute inset-0">
-                </div>
-            </div>
-            <div class="absolute inset-0 bg-gradient-to-t from-darkwhite to-transparent pointer-events-none">
+            <div class="bg-lightdesktopjames bg-cover h-screen dark:bg-darkdesktopjames"></div>
+            <div class="absolute inset-0 bg-gradient-to-t from-darkwhite to-transparent pointer-events-none dark:from-darkergray">
                 <div class="flex flex-col translate-x-3/20 justify-center h-screen">
-                    <div class="font-extrabold text-slate-600 text-8xl">
+                    <div class="font-extrabold text-slate-600 text-8xl dark:text-darkwhite">
                         <h1 class="">
                             Hey there,
                         </h1>
@@ -112,24 +109,24 @@
             </div>
         </div>
     </div>
-    <div bind:this={aboutSection} class="relative h-screen bg-darkwhite">
+    <div bind:this={aboutSection} class="relative h-screen bg-darkwhite dark:bg-darkergray">
         <div class="flex h-screen items-center">
             <div class="justify-start w-screen">
-                <div class="text-slate-600 text-left translate-x-1/4 w-104 space-y-4 font-medium text-ml">
+                <div class="text-slate-600 dark:text-darkwhite text-left translate-x-1/4 w-104 space-y-4 font-medium text-ml">
                     <p>
-                        Hey there, I'm James. I'm a 15 year old programmer from San Francisco, California.
+                        I'm James, a 15 year old programmer based in San Francisco, California.
                     </p>
 
                     <p>
-                        I started doing actual programming (not Scratch) by doing game development in Unity. I didn't feel as though there were enough games to play on my Mac and this motivated me to try to make my own. This led to my first game, <button class="text-sky-500" on:click={() => {
+                        I started learing to program in C# using Unity for game development. There weren't many games to play on my Mac and this motivated me to try to make my own. This led to my first game, <button class="text-sky-500 dark:text-sky-300" on:click={() => {
                             scrollToProjects();
-                        }}>Ultimate Tennis Quiz</button>, which has a pretty self explanatory name. When I did finish this game though, I only built it for iOS!
+                        }}>Ultimate Tennis Quiz</button>, which has a pretty self explanatory name.
                     </p>
                     <p>
                         Now I'm in the midst of learning web development. I started out by making a web game whilst abroad in the UK to learn the basics of HTML, CSS, and JavaScript. I then moved on to learning Svelte, which is what this website is built with.
                     </p>
                     <p>
-                        In the future, I'd like to get a better understanding of Swift, because I've only dabbled in it. Learning lower level languages like C++ and Rust would also be something I'd like to do in the future, along with doing more collaborative projects with other developers. I've had a lot of fun working with other people on the game launcher <button class="text-sky-500" on:click={() => {
+                        In the future, I'd like to get a better understanding of Swift, because I've only dabbled in it. Learning lower level languages like C++ and Rust would also be something I'd like to do in the future, along with collaborating with other developers. I've had a lot of fun working with other people on the game launcher <button class="text-sky-500 dark:text-sky-300" on:click={() => {
                             scrollToPhoenix();
                         }}>Phoenix</button>, and I'd like to do more projects like that in the future.
                     </p>
@@ -145,13 +142,13 @@
             </div>
         </div> 
     </div>
-    <div bind:this={projectsSection} class="relative bg-darkwhite">
+    <div bind:this={projectsSection} class="relative bg-darkwhite dark:bg-darkergray">
         <div class="flex h-screen items-center">
             <div class="justify-start translate-x-2/3">
                 <img src="/images/projects/utq.png" alt="" class="w-96">
             </div>
             <div class="justify-end w-screen -translate-x-1/10">
-                <div class="text-slate-600 text-right text-ml">
+                <div class="text-slate-600 text-right text-ml dark:text-darkwhite">
                     <a class="inline-block text-6xl font-extrabold hover:scale-102 transition-all ease-linear" href="https://apps.apple.com/us/app/ultimate-tennis-quiz/id1641028778" target="_blank">
                         Ultimate Tennis Quiz
                     </a>
@@ -166,7 +163,7 @@
         </div>
         <div class="flex h-screen items-center" bind:this={phoenixSection}>
             <div class="justify-start w-screen">
-                <div class="text-slate-600 text-left translate-x-1/3 text-ml">
+                <div class="text-slate-600 text-left translate-x-1/3 text-ml dark:text-darkwhite">
                     <a class="inline-block text-6xl font-extrabold hover:scale-102 transition-all ease-linear" href="https://github.com/Shock9616/Phoenix" target="_blank">
                         Phoenix
                     </a>
@@ -185,11 +182,11 @@
             </div>
         </div>
     </div>
-    <div bind:this={contactSection} class="relative h-screen bg-darkwhite">
+    <div bind:this={contactSection} class="relative h-screen bg-darkwhite dark:bg-darkergray">
         <div class="flex h-screen items-center">
             <div class="justify-center w-screen">
-                <div class="flex flex-row fill-slate-600 items-center w-104 space-x-8 justify-center align-middle">
-                    <button on:click={() => {window.location.href="mailto:contact@jxhug.me"}} class="hover:scale-110 hover:drop-shadow-md transition-all ease-in">
+                <div class="flex flex-row fill-slate-600 dark:fill-darkwhite items-center w-104 space-x-8 justify-center align-middle">
+                    <button on:click={() => {window.location.href="mailto:james@jxhug.me"}} class="hover:scale-110 hover:drop-shadow-md transition-all ease-in">
                         <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4.7-8 5.334L4 8.7V6.297l8 5.333 8-5.333V8.7z"/></svg>
                     </button>
                     <button on:click={() => {window.open("https://github.com/jxhug")}} class="hover:scale-110 hover:drop-shadow-md transition-all ease-in">

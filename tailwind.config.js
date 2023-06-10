@@ -26,11 +26,14 @@ export default {
             'darkgreen': '#3E8277',
             'darkgray': '#6d6d6d',
             'darkwhite': '#f2f2f2',
-            'offdarkhite': '#efefef'
+            'offdarkwhite': '#efefef',
+            'darkergray': '#111111',
+            'offdarkergray': '#1e1e1e',
         },
         backgroundImage: {
             'gradient': "linear-gradient(90deg, salmon, #ff3b3b, #ff9b57, salmon)",
-            'lightdesktopjames': 'url(/images/bgs/lightdesktopjames.png)'
+            'lightdesktopjames': 'url(/images/bgs/lightdesktopjames.png)',
+            'darkdesktopjames': 'url(/images/bgs/darkdesktopjames.png)'
         },
         backgroundSize: {
             '200%': '200%',

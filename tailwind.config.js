@@ -3,11 +3,19 @@ export default {
   content: ['./src/**/*.{html,js,svelte,ts}'],
   theme: {
     extend: {
+        fontSize: {
+            'ml': '1.125rem',
+        },
+        width: {
+            '320' : '80rem',
+        },
         boxShadow: {
             'ml': '0px 4px 20px rgba(0, 0, 0, 0.35)',
         },
         translate: {
-            '3/20': '15%'
+            '3/20': '15%',
+            '1/10': '10%',
+            '1/20': '5%',
         },
         fontFamily: {
             'apple': ['-apple-system', 'BlinkMacSystemFont', 'Segoe UI']

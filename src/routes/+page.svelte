@@ -153,7 +153,7 @@
                         Ultimate Tennis Quiz
                     </a>
                     <p>
-                        A quiz app I built for tennis fans to test their knowledge of the sport and compete against each other.
+                        A quiz app for tennis fans to test their knowledge of the sport and compete against each other.
                     </p>
                     <p>
                         Built with Unity and C#.
@@ -168,7 +168,7 @@
                         Phoenix
                     </a>
                     <p>
-                        An open source game launcher for macOS I contribute to.
+                        An lightweight, fast, and open source game launcher for macOS.
                     </p>
                     <p>
                         Built with Swift and SwiftUI.

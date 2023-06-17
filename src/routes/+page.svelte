@@ -118,7 +118,7 @@
                     </p>
 
                     <p>
-                        I started learing to program in C# using Unity for game development. There weren't many games to play on my Mac and this motivated me to try to make my own. This led to my first game, <button class="text-sky-500 dark:text-sky-300" on:click={() => {
+                        I started learning to program in C# using Unity for game development. There weren't many games to play on my Mac and this motivated me to try to make my own. This led to my first game, <button class="text-sky-500 dark:text-sky-300" on:click={() => {
                             scrollToProjects();
                         }}>Ultimate Tennis Quiz</button>, which has a pretty self explanatory name.
                     </p>
@@ -137,7 +137,7 @@
             </div>
             <div class="justify-end w-screen translate-x-1/3">
                 <div>
-                    <img src="/images/pfps/pfp.png" alt="" class="h-96 shadow-md rounded-3xl">
+                    <img src="/images/pfps/pfp.jpg" alt="" class="h-96 shadow-md rounded-3xl">
                 </div>
             </div>
         </div> 
@@ -168,7 +168,7 @@
                         Phoenix
                     </a>
                     <p>
-                        An lightweight, fast, and open source game launcher for macOS.
+                        A lightweight, fast, and open source game launcher for macOS.
                     </p>
                     <p>
                         Built with Swift and SwiftUI.

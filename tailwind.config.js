@@ -32,8 +32,8 @@ export default {
         },
         backgroundImage: {
             'gradient': "linear-gradient(90deg, salmon, #ff3b3b, #ff9b57, salmon)",
-            'lightdesktopjames': 'url(/images/bgs/lightdesktopjames.png)',
-            'darkdesktopjames': 'url(/images/bgs/darkdesktopjames.png)'
+            'lightdesktopjames': 'url(/images/bgs/lightdesktopjames.jpg)',
+            'darkdesktopjames': 'url(/images/bgs/darkdesktopjames.jpg)'
         },
         backgroundSize: {
             '200%': '200%',

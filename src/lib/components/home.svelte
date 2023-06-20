@@ -8,13 +8,9 @@
                 </h1>
                 <h1 class="">
                     I'm
-                    <span class="bg-gradient animate-gradient-cycle bg-clip-text text-transparent bg-200%">James</span>
+                    <span class="bg-red-gradient animate-gradient-cycle bg-clip-text text-transparent bg-200%">James</span>
                 </h1>
             </div>
         </div>
     </div>
 </div>
-
-<style lang="postcss">
-
-</style>

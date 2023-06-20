@@ -61,7 +61,7 @@
 </div>
 
 
-<div class="font-apple overflow-clip snap-y">
+<main class="font-apple overflow-clip snap-y">
     <div class="snap-center" bind:this={homeSection}>
         <Home />
     </div>
@@ -120,6 +120,6 @@
             </div> 
         </Section>
         </div>
-</div>
+</main>
 
 

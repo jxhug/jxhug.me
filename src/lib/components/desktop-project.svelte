@@ -7,7 +7,7 @@
     export let imageName;
 </script>
 
-<div class="flex h-screen items-center snap-center overflow-clip bg-darkwhite dark:bg-darkergray" bind:this={section}>
+<div class="flex h-screen items-center overflow-clip bg-darkwhite dark:bg-darkergray" bind:this={section}>
     <div class="justify-start w-screen">
         <div class="text-slate-600 text-left translate-x-1/3 text-ml dark:text-darkwhite">
             <a class="inline-block text-6xl font-extrabold hover:scale-102 transition-all ease-linear" href={link} target="_blank">

@@ -1,4 +1,4 @@
-<div class="relative h-screen bg-darkwhite dark:bg-darkergray snap-center overflow-clip">
+<div class="relative h-screen bg-darkwhite dark:bg-darkergray overflow-clip">
     <slot></slot>
 </div>
 

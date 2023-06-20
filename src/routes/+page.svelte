@@ -61,11 +61,11 @@
 </div>
 
 
-<main class="font-apple overflow-clip snap-y">
-    <div bind:this={homeSection}>
+<div class="font-apple overflow-clip snap-y">
+    <div class="snap-center" bind:this={homeSection}>
         <Home />
     </div>
-    <div bind:this={aboutSection}>
+    <div class="snap-center" bind:this={aboutSection}>
         <Section>
             <div class="flex h-screen items-center">
                 <div class="justify-start w-screen">
@@ -100,13 +100,13 @@
             </div> 
         </Section>
     </div>
-    <div bind:this={utqSection}>
+    <div class="snap-center" bind:this={utqSection}>
         <MobileProject section={utqSection} link="https://apps.apple.com/us/app/ultimate-tennis-quiz/id1641028778" name="Ultimate Tennis Quiz" description="A quiz app for tennis fans to test their knowledge of the sport and compete against each other." tools="Built with Unity and C#." imageName="utq.png" />
     </div>
-    <div bind:this={phoenixSection}>
+    <div class="snap-center" bind:this={phoenixSection}>
         <DesktopProject section={phoenixSection} link="https://github.com/Shock9616/Phoenix" name="Phoenix" description="A lightweight, fast, and open source game launcher for macOS." tools="Built with Swift and SwiftUI." imageName="phoenix.png" />
     </div>
-    <div bind:this={contactSection}>
+    <div class="snap-center" bind:this={contactSection}>
         <Section>
             <div class="flex h-screen items-center">
                 <div class="justify-center w-screen">
@@ -120,6 +120,6 @@
             </div> 
         </Section>
         </div>
-</main>
+</div>
 
 

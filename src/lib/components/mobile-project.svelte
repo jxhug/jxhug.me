@@ -7,7 +7,7 @@
     export let imageName;
 </script>
 
-<div class="flex h-screen items-center snap-center overflow-clip bg-darkwhite dark:bg-darkergray" bind:this={section}>
+<div class="flex h-screen items-center overflow-clip bg-darkwhite dark:bg-darkergray" bind:this={section}>
     <div class="justify-start translate-x-2/3">
         <img src="/images/projects/{imageName}" alt={name} class="w-96">
     </div>

@@ -9,9 +9,9 @@
 
 <div class="bg-darkwhite dark:bg-darkergray overflow-clip mt-36 -m-8">
     <div class="flex items-center {flipped ? "flex-row-reverse" : "flex-row"}">
-        <img src="/images/projects/{imageName}" alt={name} class="w-80 ml-40">
+        <img src="/images/projects/{imageName}" alt={name} class="w-80 ml-40 drop-shadow">
         <div class="text-slate-600 {flipped ? "text-left" : "text-right"} text-ml dark:text-darkwhite ml-20 mr-20">
-            <a class="inline-block text-6xl font-extrabold hover:scale-102 transition-all ease-linear" href={link} target="_blank">
+            <a class="inline-block text-6xl font-extrabold hover:scale-105 transition-all ease-linear" href={link} target="_blank">
                 {name}
             </a>
             <p>

@@ -107,6 +107,12 @@
         </div>  
         <ScrollArrow type="down" scroll={scrollToPhoenix}/> 
     </div>
+    <div class="snap-center h-screen bg-darkwhite flex flex-col">
+        <ScrollArrow type="up" scroll={scrollToUTQ}/> 
+        <div bind:this={phoenixSection} class="snap-center">
+            <DesktopProject section={phoenixSection} link="https://github.com/Shock9616/Phoenix" name="Phoenix" description="A lightweight and open source game launcher for macOS." tools="Built with Swift and SwiftUI." imageName="phoenix.png" flipped={true}/>
+        </div>  
+    </div>
     <div class="snap-center" bind:this={contactSection}>
         <Section>
             <div class="flex h-screen items-center">

@@ -8,6 +8,10 @@ export default {
         },
         width: {
             '320' : '80rem',
+            '160' : '40rem',
+            '240' : '60rem',
+            '220' : '55rem',
+            '200': '50rem',
         },
         boxShadow: {
             'ml': '0px 4px 20px rgba(0, 0, 0, 0.35)',

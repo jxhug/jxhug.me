@@ -1,15 +1,16 @@
 <script>
-    export let section;
     export let link;
     export let name;
     export let description;
     export let tools;
     export let imageName;
+    export let flipped;
 </script>
 
-<div class="flex h-screen items-center overflow-clip bg-darkwhite dark:bg-darkergray" bind:this={section}>
-    <div class="justify-start w-screen">
-        <div class="text-slate-600 text-left translate-x-1/3 text-ml dark:text-darkwhite">
+<div class="bg-darkwhite dark:bg-darkergray overflow-clip mt-36">
+    <div class="flex items-center {flipped ? "flex-row-reverse" : "flex-row"}">
+        <img src="/images/projects/{imageName}" alt={name} class="w-200 ml-40">
+        <div class="text-slate-600 {flipped ? "text-left" : "text-right"} text-ml dark:text-darkwhite ml-40 -mr-40">
             <a class="inline-block text-6xl font-extrabold hover:scale-102 transition-all ease-linear" href={link} target="_blank">
                 {name}
             </a>
@@ -21,9 +22,5 @@
             </p>
         </div>
     </div>
-    <div class="justify-end min-w-screen translate-x-1/20">
-        <div>
-            <img src="/images/projects/{imageName}" alt={name} class="w-auto scale-90">
-        </div>
-    </div>
 </div>
+

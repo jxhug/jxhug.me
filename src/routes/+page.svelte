@@ -56,7 +56,7 @@
     <div class="space-y-3">
         <SidebarButton name="Home" scroll={scrollToHome} isHovered={isHomeHovered} svgPath={homeSVGPath} />
         <SidebarButton name="About" scroll={scrollToAbout} isHovered={isAboutHovered} svgPath={aboutSVGPath} />
-        <SidebarButton name="Projects" scroll={scrollToUTQ} isHovered={isProjectsHovered} svgPath={projectsSVGPath} />
+        <SidebarButton name="Projects" scroll={scrollToPhoenix} isHovered={isProjectsHovered} svgPath={projectsSVGPath} />
         <SidebarButton name="Contact" scroll={scrollToContact} isHovered={isContactHovered} svgPath={contactSVGPath} />
     </div>
 </div>
@@ -78,7 +78,7 @@
                         <p>
                             I started learning to program in C# using Unity for game development. There weren't many games to play on my Mac and this motivated me to try to make my own. This led to my first game, <button class="text-sky-500 dark:text-sky-300" on:click={() => {
                                 scrollToUTQ();
-                            }}>Ultimate Tennis Quiz</button>, which has a pretty self explanatory name.
+                            }}>Ultimate Tennis Quiz</button>, which is no longer on the App Store due to my lack of an Apple Developer account.
                         </p>
                         <p>
                             Now I'm in the midst of learning web development. I started out by making a web game whilst abroad in the UK to learn the basics of HTML, CSS, and JavaScript. I then moved on to learning Svelte, which is what this website is built with.
@@ -101,18 +101,15 @@
             </div> 
         </Section>
     </div>
-    <div class="snap-center h-screen bg-darkwhite flex flex-col">
+    <!-- <div class="snap-center h-screen bg-darkwhite dark:bg-darkergray flex flex-col">
         <div bind:this={utqSection} class="snap-center">
             <MobileProject link="https://apps.apple.com/us/app/ultimate-tennis-quiz/id1641028778" name="Ultimate Tennis Quiz" description="A quiz app for tennis fans to test their knowledge of the sport and compete against each other." tools="Built with Unity and C#." imageName="utq.png" flipped={false} />
         </div>  
-        <ScrollArrow type="down" scroll={scrollToPhoenix}/> 
-    </div>
-    <div class="snap-center h-screen bg-darkwhite flex flex-col">
-        <ScrollArrow type="up" scroll={scrollToUTQ}/> 
-        <div bind:this={phoenixSection} class="snap-center">
+        <ScrollArrow type="down" scroll={scrollToPhoenix}/>
+    </div> -->
+        <div bind:this={phoenixSection} class="snap-center justify-center">
             <DesktopProject section={phoenixSection} link="https://github.com/Shock9616/Phoenix" name="Phoenix" description="A lightweight and open source game launcher for macOS." tools="Built with Swift and SwiftUI." imageName="phoenix.png" flipped={true}/>
         </div>  
-    </div>
     <div class="snap-center" bind:this={contactSection}>
         <Section>
             <div class="flex h-screen items-center">

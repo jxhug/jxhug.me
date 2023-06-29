@@ -101,15 +101,12 @@
             </div> 
         </Section>
     </div>
-    <!-- <div class="snap-center h-screen bg-darkwhite dark:bg-darkergray flex flex-col">
-        <div bind:this={utqSection} class="snap-center">
-            <MobileProject link="https://apps.apple.com/us/app/ultimate-tennis-quiz/id1641028778" name="Ultimate Tennis Quiz" description="A quiz app for tennis fans to test their knowledge of the sport and compete against each other." tools="Built with Unity and C#." imageName="utq.png" flipped={false} />
-        </div>  
-        <ScrollArrow type="down" scroll={scrollToPhoenix}/>
-    </div> -->
-        <div bind:this={phoenixSection} class="snap-center justify-center">
-            <DesktopProject section={phoenixSection} link="https://github.com/Shock9616/Phoenix" name="Phoenix" description="A lightweight and open source game launcher for macOS." tools="Built with Swift and SwiftUI." imageName="phoenix.png" flipped={true}/>
-        </div>  
+    <div bind:this={phoenixSection} class="snap-center justify-center">
+        <DesktopProject section={phoenixSection} link="https://github.com/Shock9616/Phoenix" name="Phoenix" description="A lightweight and open source game launcher for macOS." tools="Built with Swift and SwiftUI." imageName="phoenix.png" flipped={true}/>
+    </div> 
+    <div bind:this={utqSection} class="snap-center">
+        <MobileProject link="https://github.com/jxhug/UltimateTennisQuiz" name="Ultimate Tennis Quiz" description="A quiz app for tennis fans to test their knowledge of the sport and compete against each other." tools="Built with Unity and C#." imageName="utq.png" flipped={false} />
+    </div>  
     <div class="snap-center" bind:this={contactSection}>
         <Section>
             <div class="flex h-screen items-center">

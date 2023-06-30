@@ -70,7 +70,9 @@
 <div class="flex items-center fixed z-10 object-scale-down">
     <div class="flex w-screen h-screen justify-center sm:flex-row md:flex-col md:translate-x-10 items-end md:items-start">
         {#if isSmallMedia}
-        <div class="flex w-screen justify-center bg-white-transparent-gradient">
+        <div class="flex w-screen h-10 justify-center bg-darkwhite absolute">
+        </div>
+        <div class="flex w-screen justify-center bg-white-transparent-gradient absolute -translate-y-5">
             <SidebarButton name="Home" scroll={scrollToHome} isHovered={isHomeHovered} svgPath={homeSVGPath} {isSmallMedia}/>
             <SidebarButton name="About" scroll={scrollToAbout} isHovered={isAboutHovered} svgPath={aboutSVGPath} {isSmallMedia}/>
             <SidebarButton name="Projects" scroll={scrollToPhoenix} isHovered={isProjectsHovered} svgPath={projectsSVGPath} {isSmallMedia}/>

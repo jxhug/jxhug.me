@@ -5,7 +5,7 @@
     export let isHovered;
     export let svgPath;
     export let scroll = () => {};
-    export let isSmallMedia;
+    export let isSmallMedia
 </script>
 
 <div class="flex items-center p-3 md:p-2">

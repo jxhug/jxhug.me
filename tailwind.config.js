@@ -35,6 +35,7 @@ export default {
             'offdarkergray': '#1e1e1e',
         },
         backgroundImage: {
+            'white-transparent-gradient': "linear-gradient(0deg, #f2f2f2, #efefef, transparent)",
             'red-gradient': "linear-gradient(90deg, salmon, #ff3b3b, #ff9b57, salmon)",
             'orange-gradient': "linear-gradient(90deg, orange, #ff3b3b, #ff9b57, orange)",
             'lightdesktopjames': 'url(/images/bgs/lightdesktopjames.jpg)',

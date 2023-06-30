@@ -10,6 +10,8 @@
 
     import { homeSVGPath, aboutSVGPath, projectsSVGPath, contactSVGPath, mailSVGPath, githubSVGPath, twitterSVGPath, discordSVGPath } from '$lib/svgs.js'
 
+    import { onMount } from 'svelte';
+
     let homeSection;
     let aboutSection;
     let contactSection;
@@ -20,6 +22,18 @@
     let isProjectsHovered = false;
     let isAboutHovered = false;
     let isContactHovered = false;
+
+    let isSmallMedia = false;
+
+    onMount(() => {
+        const mediaQuery = window.matchMedia('(max-width: 768px)');
+        handleMediaChange(mediaQuery);
+        mediaQuery.addEventListener('change', handleMediaChange);
+    });
+
+    function handleMediaChange(event) {
+        isSmallMedia = event.matches;
+    }
 
     const calculateAge = (birthday) => {
         var today = new Date();
@@ -52,15 +66,24 @@
     }
 </script>
 
-<div class="h-screen flex flex-col fixed z-10 justify-center translate-x-10">
-    <div class="space-y-3">
-        <SidebarButton name="Home" scroll={scrollToHome} isHovered={isHomeHovered} svgPath={homeSVGPath} />
-        <SidebarButton name="About" scroll={scrollToAbout} isHovered={isAboutHovered} svgPath={aboutSVGPath} />
-        <SidebarButton name="Projects" scroll={scrollToPhoenix} isHovered={isProjectsHovered} svgPath={projectsSVGPath} />
-        <SidebarButton name="Contact" scroll={scrollToContact} isHovered={isContactHovered} svgPath={contactSVGPath} />
-    </div>
-</div>
 
+<div class="flex items-center fixed z-10 object-scale-down">
+    <div class="flex w-screen h-screen justify-center sm:flex-row md:flex-col md:translate-x-10 items-end md:items-start">
+        {#if isSmallMedia}
+        <div class="flex w-screen justify-center bg-white-transparent-gradient">
+            <SidebarButton name="Home" scroll={scrollToHome} isHovered={isHomeHovered} svgPath={homeSVGPath} {isSmallMedia}/>
+            <SidebarButton name="About" scroll={scrollToAbout} isHovered={isAboutHovered} svgPath={aboutSVGPath} {isSmallMedia}/>
+            <SidebarButton name="Projects" scroll={scrollToPhoenix} isHovered={isProjectsHovered} svgPath={projectsSVGPath} {isSmallMedia}/>
+            <SidebarButton name="Contact" scroll={scrollToContact} isHovered={isContactHovered} svgPath={contactSVGPath} {isSmallMedia}/>
+        </div>
+        {:else}
+        <SidebarButton name="Home" scroll={scrollToHome} isHovered={isHomeHovered} svgPath={homeSVGPath} {isSmallMedia}/>
+        <SidebarButton name="About" scroll={scrollToAbout} isHovered={isAboutHovered} svgPath={aboutSVGPath} {isSmallMedia}/>
+        <SidebarButton name="Projects" scroll={scrollToPhoenix} isHovered={isProjectsHovered} svgPath={projectsSVGPath} {isSmallMedia}/>
+        <SidebarButton name="Contact" scroll={scrollToContact} isHovered={isContactHovered} svgPath={contactSVGPath} {isSmallMedia}/>
+        {/if}
+    </div> 
+</div>
 
 <main class="font-apple overflow-clip snap-y">
     <div class="snap-center" bind:this={homeSection}>
@@ -93,16 +116,18 @@
                         </p>
                     </div>
                 </div>
+                {#if !isSmallMedia}
                 <div class="justify-end w-screen translate-x-1/3">
                     <div>
                         <img src="/images/pfps/pfp.jpg" alt="" class="h-96 shadow-md rounded-3xl">
                     </div>
                 </div>
+                {/if}
             </div> 
         </Section>
     </div>
     <div bind:this={phoenixSection} class="snap-center justify-center">
-        <DesktopProject section={phoenixSection} link="https://github.com/Shock9616/Phoenix" name="Phoenix" description="A lightweight and open source game launcher for macOS." tools="Built with Swift and SwiftUI." imageName="phoenix.png" flipped={true}/>
+        <DesktopProject link="https://github.com/Shock9616/Phoenix" name="Phoenix" description="A lightweight and open source game launcher for macOS." tools="Built with Swift and SwiftUI." imageName="phoenix.png" flipped={true}/>
     </div> 
     <div bind:this={utqSection} class="snap-center">
         <MobileProject link="https://github.com/jxhug/UltimateTennisQuiz" name="Ultimate Tennis Quiz" description="A quiz app for tennis fans to test their knowledge of the sport and compete against each other." tools="Built with Unity and C#." imageName="utq.png" flipped={false} />

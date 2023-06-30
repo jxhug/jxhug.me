@@ -8,7 +8,7 @@
     export let isSmallMedia
 </script>
 
-<div class="flex items-center p-3 md:p-2">
+<div class="flex items-center p-2 sm:p-2.5 md:p-2 object-scale-down">
     <div class="flex items-center" class:md:space-x-4={isHovered ? 'md:space-x-4' : ''}>
         <button class="inline-flex p-4 items-center justify-center rounded-full bg-offdarkwhite text-white dark:bg-offdarkergray dark:text-darkwhite shadow-ml transition-all hover:scale-105 ease-in flex-shrink-0" on:mouseenter={() => isHovered = true} on:mouseleave={() => isHovered = false} 
         on:click={

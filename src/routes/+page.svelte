@@ -86,7 +86,7 @@
     </div> 
 </div>
 
-<main class="font-apple overflow-clip snap-y">
+<main class="font-apple overflow-clip snap-y object-scale-down">
     <div class="snap-center" bind:this={homeSection}>
         <Home />
     </div>
@@ -94,11 +94,10 @@
         <Section>
             <div class="flex h-screen items-center">
                 <div class="justify-start w-screen">
-                    <div class="text-slate-600 dark:text-darkwhite text-left translate-x-1/4 w-104 space-y-4 font-medium text-ml">
+                    <div class="text-slate-600 dark:text-darkwhite text-left md:translate-x-1/4 space-y-4 font-medium text-sm sm:text-base md:text-ml object-scale-down p-5">
                         <p>
                             I'm James, a {calculateAge(new Date(2008, 1, 6))} year old programmer based in San Francisco, California.
                         </p>
-
                         <p>
                             I started learning to program in C# using Unity for game development. There weren't many games to play on my Mac and this motivated me to try to make my own. This led to my first game, <button class="text-sky-500 dark:text-sky-300" on:click={() => {
                                 scrollToUTQ();
@@ -120,7 +119,7 @@
                 {#if !isSmallMedia}
                 <div class="justify-end w-screen translate-x-1/3">
                     <div>
-                        <img src="/images/pfps/pfp.jpg" alt="" class="h-96 shadow-md rounded-3xl">
+                        <img src="/images/pfps/pfp.jpg" alt="" class="md:h-40 lg:h-96 shadow-md rounded-3xl">
                     </div>
                 </div>
                 {/if}

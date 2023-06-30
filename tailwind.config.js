@@ -36,6 +36,7 @@ export default {
         },
         backgroundImage: {
             'white-transparent-gradient': "linear-gradient(0deg, #f2f2f2, #efefef, transparent)",
+            'black-transparent-gradient': "linear-gradient(0deg, #111111, #1e1e1e, transparent)",
             'red-gradient': "linear-gradient(90deg, salmon, #ff3b3b, #ff9b57, salmon)",
             'orange-gradient': "linear-gradient(90deg, orange, #ff3b3b, #ff9b57, orange)",
             'lightdesktopjames': 'url(/images/bgs/lightdesktopjames.jpg)',

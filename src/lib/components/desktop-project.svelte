@@ -7,20 +7,39 @@
     export let flipped;
 </script>
 
-<div class="bg-darkwhite dark:bg-darkergray overflow-clip h-screen flex items-center justify-center">
-    <div class="flex items-center flex-col {flipped ? "md:flex-row-reverse" : "md:flex-row"} mx-auto translate-x-12">
-        <img src="/images/projects/{imageName}" alt={name} class="md:w-200 mr-24 md:mr-10 drop-shadow">
-        <div class="text-slate-600 {flipped ? "md:text-left" : "md:text-right"} text-base dark:text-darkwhite -ml-3 md:ml-28 mr-10 w-fit pr-10">
-            <a class="inline-block text-6xl font-extrabold hover:scale-105 transition-all ease-linear" href={link} target="_blank">
-                {name}
-            </a>
-            <p>
-                {description}
-            </p>
-            <p>
-                {tools}
-            </p>
-        </div>
+<div class="overflow-clip h-screen sm:flex sm:snap-center hidden absolute sm:relative bg-darkwhite dark:bg-darkergray">
+    <div class={`absolute max-w-4xl max-h-4xl ${flipped ? "right-[40vw]" : "left-[40vw]"} translate-y-1/4`}>
+        <img class="object-scale-down animate hover" alt={`Screenshot of ${name}`} src="/images/projects/{imageName}">
+    </div>
+    <div class={`flex ${flipped ? "flex-row-reverse" : "flex-row"} grow self-center`}>
+        <a href={link} target="_blank" rel="noreferrer noopener" class="m-40">
+            <div class="flex flex-col transition duration-300 hover:ease-in-out hover:scale-105 text-slate-600 {flipped ? "text-right" : "text-left"}">
+                <h2 class="text-6xl font-extrabold w-max">{name}</h2>
+                <p class="text-base">
+                    {description}
+                    <br/><br/>
+                    {tools}
+                </p>
+            </div>
+        </a>
+        <div class="w-full" />
     </div>
 </div>
 
+<div class="flex flex-col justify-center h-screen visible sm:invisible relative sm:absolute bg-darkwhite">
+    <div class="max-w-4xl max-h-4xl w-fit justify-center flex">
+        <img class="object-scale-down animate hover" alt={`Screenshot of ${name}`} src="/images/projects/{imageName}">
+    </div>
+    <div class="flex">
+        <a href={link} target="_blank" rel="noreferrer noopener" class="m-5 w-fit">
+            <div class="flex flex-col transition duration-300 hover:ease-in-out hover:scale-105 text-slate-600">
+                <h2 class="text-4xl font-extrabold w-max">{name}</h2>
+                <p class="text-base">
+                    {description}
+                    <br/><br/>
+                    {tools}
+                </p>
+            </div>
+        </a>
+    </div>
+</div>

@@ -66,27 +66,28 @@
     }
 </script>
 
-<div class="flex items-center fixed z-10 object-scale-down">
-    <div class="flex w-screen h-screen justify-center sm:flex-row md:flex-col md:translate-x-10 items-end md:items-start">
-        {#if isSmallMedia}
-        <div class="flex w-screen h-10 justify-center bg-darkwhite dark:bg-darkergray absolute">
-        </div>
-        <div class="flex w-screen justify-center bg-white-transparent-gradient dark:bg-black-transparent-gradient absolute -translate-y-5">
+
+
+<main class="font-apple overflow-clip snap-y">
+    <div class="items-center fixed z-10">
+        <div class="flex w-screen md:w-auto h-screen justify-center sm:flex-row md:flex-col md:translate-x-10 items-end md:items-start">
+            {#if isSmallMedia}
+            <div class="flex w-screen h-10 justify-center bg-darkwhite dark:bg-darkergray absolute">
+            </div>
+            <div class="flex w-screen justify-center bg-white-transparent-gradient dark:bg-black-transparent-gradient absolute -translate-y-5">
+                <SidebarButton name="Home" scroll={scrollToHome} isHovered={isHomeHovered} svgPath={homeSVGPath} {isSmallMedia}/>
+                <SidebarButton name="About" scroll={scrollToAbout} isHovered={isAboutHovered} svgPath={aboutSVGPath} {isSmallMedia}/>
+                <SidebarButton name="Projects" scroll={scrollToPhoenix} isHovered={isProjectsHovered} svgPath={projectsSVGPath} {isSmallMedia}/>
+                <SidebarButton name="Contact" scroll={scrollToContact} isHovered={isContactHovered} svgPath={contactSVGPath} {isSmallMedia}/>
+            </div>
+            {:else}
             <SidebarButton name="Home" scroll={scrollToHome} isHovered={isHomeHovered} svgPath={homeSVGPath} {isSmallMedia}/>
             <SidebarButton name="About" scroll={scrollToAbout} isHovered={isAboutHovered} svgPath={aboutSVGPath} {isSmallMedia}/>
             <SidebarButton name="Projects" scroll={scrollToPhoenix} isHovered={isProjectsHovered} svgPath={projectsSVGPath} {isSmallMedia}/>
             <SidebarButton name="Contact" scroll={scrollToContact} isHovered={isContactHovered} svgPath={contactSVGPath} {isSmallMedia}/>
-        </div>
-        {:else}
-        <SidebarButton name="Home" scroll={scrollToHome} isHovered={isHomeHovered} svgPath={homeSVGPath} {isSmallMedia}/>
-        <SidebarButton name="About" scroll={scrollToAbout} isHovered={isAboutHovered} svgPath={aboutSVGPath} {isSmallMedia}/>
-        <SidebarButton name="Projects" scroll={scrollToPhoenix} isHovered={isProjectsHovered} svgPath={projectsSVGPath} {isSmallMedia}/>
-        <SidebarButton name="Contact" scroll={scrollToContact} isHovered={isContactHovered} svgPath={contactSVGPath} {isSmallMedia}/>
-        {/if}
-    </div> 
-</div>
-
-<main class="font-apple overflow-clip snap-y object-scale-down">
+            {/if}
+        </div> 
+    </div>
     <div class="snap-center" bind:this={homeSection}>
         <Home />
     </div>
@@ -97,21 +98,17 @@
                     <div class="text-slate-600 dark:text-darkwhite text-left md:translate-x-1/4 space-y-4 font-medium text-sm sm:text-base md:text-ml object-scale-down p-5">
                         <p>
                             I'm James, a {calculateAge(new Date(2008, 1, 6))} year old programmer based in San Francisco, California.
-                        </p>
-                        <p>
+                            <br/><br/>
                             I started learning to program in C# using Unity for game development. There weren't many games to play on my Mac and this motivated me to try to make my own. This led to my first game, <button class="text-sky-500 dark:text-sky-300" on:click={() => {
                                 scrollToUTQ();
                             }}>Ultimate Tennis Quiz</button>, which is no longer on the App Store due to my lack of an Apple Developer account.
-                        </p>
-                        <p>
-                            Now I'm in the midst of learning web development. I started out by making a web game whilst abroad in the UK to learn the basics of HTML, CSS, and JavaScript. I then moved on to learning Svelte, which is what this website is built with.
-                        </p>
-                        <p>
+                            <br/><br/>
+                            Now I'm in the midst of learning web development. I started out by making a web game to learn the basics of HTML, CSS, and JavaScript. I then moved on to learning Svelte, which is what this website is built with.
+                            <br/><br/>
                             In the future, I'd like to get a better understanding of Swift, because I've only dabbled in it. Learning lower level languages like C++ and Rust would also be something I'd like to do in the future, along with collaborating with other developers. I've had a lot of fun working with other people on the game launcher <button class="text-sky-500 dark:text-sky-300" on:click={() => {
                                 scrollToPhoenix();
                             }}>Phoenix</button>, and I'd like to do more projects like that in the future.
-                        </p>
-                        <p>
+                            <br/><br/>
                             You can view my projects that are polished enough to show off below.
                         </p>
                     </div>
@@ -127,10 +124,10 @@
         </Section>
     </div>
     <div bind:this={phoenixSection} class="snap-center justify-center">
-        <DesktopProject link="https://github.com/Shock9616/Phoenix" name="Phoenix" description="A lightweight and open source game launcher for macOS." tools="Built with Swift and SwiftUI." imageName="phoenix.png" flipped={true}/>
+        <DesktopProject link="https://github.com/Shock9616/Phoenix" name="Phoenix" description="A lightweight and open source game launcher for macOS." tools="Built with Swift and SwiftUI." imageName="phoenix.png" flipped={false}/>
     </div> 
     <div bind:this={utqSection} class="snap-center">
-        <MobileProject link="https://github.com/jxhug/UltimateTennisQuiz" name="Ultimate Tennis Quiz" description="A quiz app for tennis fans to test their knowledge of the sport and compete against each other." tools="Built with Unity and C#." imageName="utq.png" flipped={false} />
+        <MobileProject link="https://github.com/jxhug/UltimateTennisQuiz" name="Ultimate Tennis Quiz" description="A quiz app for tennis fans to test their knowledge of the sport and compete against each other. No longer on the App Store due to my lack of an Apple Developer account." tools="Built with Unity and C#." imageName="utq.png" flipped={false} />
     </div>  
     <div class="snap-center" bind:this={contactSection}>
         <Section>
@@ -145,7 +142,7 @@
                 </div>
             </div> 
         </Section>
-        </div>
+    </div>
 </main>
 
 

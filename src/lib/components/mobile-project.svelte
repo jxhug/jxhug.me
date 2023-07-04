@@ -7,23 +7,40 @@
     export let flipped;
 </script>
 
-<div class="bg-darkwhite dark:bg-darkergray overflow-clip h-screen flex items-center justify-center">
-    <div class="flex items-center {flipped ? "flex-row-reverse" : "flex-row"}">
-        <img src="/images/projects/{imageName}" alt={name} class="w-80 ml-24">
-        <div class="text-slate-600 {flipped ? "text-left" : "text-right"} text-ml dark:text-darkwhite ml-20 mr-20">
-            <a class="inline-block text-6xl font-extrabold hover:scale-105 transition-all ease-linear" href={link} target="_blank">
-                {name}
-            </a>
-            <p>
-                {description}
-            </p>
-            <p>
-                No longer on the App Store due to my lack of an Apple Developer account.
-            </p>
-            <p>
-                {tools}
-            </p>
-        </div>
+<div class="overflow-clip h-screen sm:flex sm:snap-center hidden absolute sm:relative bg-darkwhite dark:bg-darkergray">
+    <div class={`absolute max-w-4xl max-h-4xl ${flipped ? "right-[72vw]" : "left-[72vw]"} ${flipped ? "translate-x-1/3" : "-translate-x-1/3"} translate-y-[8vh]`}>
+        <img class="object-scale-down animate hover" alt="Picture of {name} on an iPhone" src="/images/projects/{imageName}">
+    </div>
+    <div class={`flex ${flipped ? "flex-row-reverse" : "flex-row"} grow self-center`}>
+        <a href={link} target="_blank" rel="noreferrer noopener" class="m-40">
+            <div class="flex flex-col transition duration-300 hover:ease-in-out hover:scale-105 text-slate-600 {flipped ? "text-right" : "text-left"}">
+                <h2 class="text-6xl font-extrabold w-max">{name}</h2>
+                <p class="text-base">
+                    {description}
+                    <br/><br/>
+                    {tools}
+                </p>
+            </div>
+        </a>
+        <div class="w-full" />
+    </div>
+</div>
+
+<div class="flex flex-col justify-center h-screen visible sm:invisible relative sm:absolute bg-darkwhite">
+    <div class="max-w-4xl max-h-4xl w-fit justify-center flex">
+        <img class="object-scale-down animate hover w-1/2" alt="Picture of {name} on an iPhone" src="/images/projects/{imageName}">
+    </div>
+    <div class="flex">
+        <a href={link} target="_blank" rel="noreferrer noopener" class="m-5 w-fit">
+            <div class="flex flex-col transition duration-300 hover:ease-in-out hover:scale-105 text-slate-600">
+                <h2 class="text-4xl font-extrabold w-max">{name}</h2>
+                <p class="text-base">
+                    {description}
+                    <br/><br/>
+                    {tools}
+                </p>
+            </div>
+        </a>
     </div>
 </div>
 

@@ -131,14 +131,12 @@
     </div>  
     <div class="snap-center" bind:this={contactSection}>
         <Section>
-            <div class="flex h-screen items-center">
-                <div class="justify-center w-screen">
-                    <div class="flex flex-row fill-slate-600 dark:fill-darkwhite items-center w-104 space-x-8 justify-center align-middle">
-                        <ContactButton onclick={() => {window.location.href="mailto:james@jxhug.me"}} svgPath={mailSVGPath} />
-                        <ContactButton onclick={() => {window.open("https://github.com/jxhug")}} svgPath={githubSVGPath} />
-                        <ContactButton onclick={() => {window.open("https://twitter.com/@diskutility")}} svgPath={twitterSVGPath} />
-                        <ContactButton onclick={() => {window.open("https://discord.com/users/463024798784815105")}} svgPath={discordSVGPath} />
-                    </div>
+            <div class="flex h-screen items-center justify-center">
+                <div class="grid grid-cols-2 sm:grid-cols-4 gap-6 sm:gap-8 fill-slate-600 dark:fill-darkwhite">
+                    <ContactButton onclick={() => {window.location.href="mailto:james@jxhug.me"}} svgPath={mailSVGPath} />
+                    <ContactButton onclick={() => {window.open("https://github.com/jxhug")}} svgPath={githubSVGPath} />
+                    <ContactButton onclick={() => {window.open("https://twitter.com/@diskutility")}} svgPath={twitterSVGPath} />
+                    <ContactButton onclick={() => {window.open("https://discord.com/users/463024798784815105")}} svgPath={discordSVGPath} />
                 </div>
             </div> 
         </Section>

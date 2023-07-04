@@ -33,8 +33,8 @@
     <div class="flex">
         <a href={link} target="_blank" rel="noreferrer noopener" class="m-5 w-fit">
             <div class="flex flex-col transition duration-300 hover:ease-in-out hover:scale-105 text-slate-600">
-                <h2 class="text-4xl font-extrabold w-max">{name}</h2>
-                <p class="text-base">
+                <h2 class="text-4xl font-extrabold w-screen">{name}</h2>
+                <p class="text-base w-screen pr-5">
                     {description}
                     <br/><br/>
                     {tools}

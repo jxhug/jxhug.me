@@ -26,7 +26,7 @@
     </div>
 </div>
 
-<div class="flex flex-col justify-center h-screen visible sm:invisible relative sm:absolute bg-darkwhite">
+<div class="flex flex-col justify-center h-screen sm:hidden relative sm:absolute bg-darkwhite">
     <div class="max-w-4xl max-h-4xl w-fit justify-center flex">
         <img class="object-scale-down animate hover w-1/2" alt="Picture of {name} on an iPhone" src="/images/projects/{imageName}">
     </div>

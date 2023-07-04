@@ -68,10 +68,10 @@
 
 
 
-<main class="font-apple overflow-clip snap-y">
-    <div class="items-center fixed z-10">
-        <div class="flex w-screen md:w-auto h-screen justify-center sm:flex-row md:flex-col md:translate-x-10 items-end md:items-start">
-            {#if isSmallMedia}
+<main class="font-apple overflow-hidden snap-y">
+    <div class="fixed z-10">
+        {#if isSmallMedia}
+        <div class="fixed inset-x-0 bottom-0 flex items-end justify-center">
             <div class="flex w-screen h-10 justify-center bg-darkwhite dark:bg-darkergray absolute">
             </div>
             <div class="flex w-screen justify-center bg-white-transparent-gradient dark:bg-black-transparent-gradient absolute -translate-y-5">
@@ -80,13 +80,15 @@
                 <SidebarButton name="Projects" scroll={scrollToPhoenix} isHovered={isProjectsHovered} svgPath={projectsSVGPath} {isSmallMedia}/>
                 <SidebarButton name="Contact" scroll={scrollToContact} isHovered={isContactHovered} svgPath={contactSVGPath} {isSmallMedia}/>
             </div>
-            {:else}
+        </div>
+        {:else}
+        <div class="translate-x-10 h-screen flex flex-col justify-center">
             <SidebarButton name="Home" scroll={scrollToHome} isHovered={isHomeHovered} svgPath={homeSVGPath} {isSmallMedia}/>
             <SidebarButton name="About" scroll={scrollToAbout} isHovered={isAboutHovered} svgPath={aboutSVGPath} {isSmallMedia}/>
             <SidebarButton name="Projects" scroll={scrollToPhoenix} isHovered={isProjectsHovered} svgPath={projectsSVGPath} {isSmallMedia}/>
             <SidebarButton name="Contact" scroll={scrollToContact} isHovered={isContactHovered} svgPath={contactSVGPath} {isSmallMedia}/>
-            {/if}
-        </div> 
+        </div>
+        {/if}
     </div>
     <div class="snap-center" bind:this={homeSection}>
         <Home />
@@ -99,13 +101,13 @@
                         <p>
                             I'm James, a {calculateAge(new Date(2008, 1, 6))} year old programmer based in San Francisco, California.
                             <br/><br/>
-                            I started learning to program in C# using Unity for game development. There weren't many games to play on my Mac and this motivated me to try to make my own. This led to my first game, <button class="text-sky-500 dark:text-sky-300" on:click={() => {
+                            I started learning to program in C# using Unity for game development. There weren't many games to play on my Mac and this motivated me to try to make my own. This led to my first game, <button class="text-sky-500 dark:text-sky-300 hover:text-indigo-500 transition-all ease-linear" on:click={() => {
                                 scrollToUTQ();
-                            }}>Ultimate Tennis Quiz</button>, which is no longer on the App Store due to my lack of an Apple Developer account.
+                            }}>Ultimate Tennis Quiz</button>, which was on the App Store in 2022.
                             <br/><br/>
-                            Now I'm in the midst of learning web development. I started out by making a web game to learn the basics of HTML, CSS, and JavaScript. I then moved on to learning Svelte, which is what this website is built with.
+                            Now I'm in the midst of learning web development. I started out by making a web game to learn the basics of HTML, CSS, and JavaScript. I then moved on to learning Svelte, which is what this website is built with. You can find the source code <a class="text-sky-500 dark:text-sky-300 hover:text-indigo-500 transition-all ease-linear" href="https://github.com/jxhug/jxhug.me">here</a>.
                             <br/><br/>
-                            In the future, I'd like to get a better understanding of Swift, because I've only dabbled in it. Learning lower level languages like C++ and Rust would also be something I'd like to do in the future, along with collaborating with other developers. I've had a lot of fun working with other people on the game launcher <button class="text-sky-500 dark:text-sky-300" on:click={() => {
+                            In the future, I'd like to get a better understanding of Swift, because I've only dabbled in it. Learning lower level languages like C++ and Rust would also be something I'd like to do in the future, along with collaborating with other developers. I've had a lot of fun working with other people on the game launcher <button class="text-sky-500 dark:text-sky-300 hover:text-indigo-500 transition-all ease-linear" on:click={() => {
                                 scrollToPhoenix();
                             }}>Phoenix</button>, and I'd like to do more projects like that in the future.
                             <br/><br/>
@@ -124,10 +126,10 @@
         </Section>
     </div>
     <div bind:this={phoenixSection} class="snap-center justify-center">
-        <DesktopProject link="https://github.com/Shock9616/Phoenix" name="Phoenix" description="A lightweight and open source game launcher for macOS." tools="Built with Swift and SwiftUI." imageName="phoenix.png" flipped={false}/>
+        <DesktopProject link="https://github.com/Shock9616/Phoenix" name="Phoenix" description="A lightweight and open source game launcher for macOS." tools="Built with Swift and SwiftUI." imageName="phoenix.png" flipped={true} />
     </div> 
     <div bind:this={utqSection} class="snap-center">
-        <MobileProject link="https://github.com/jxhug/UltimateTennisQuiz" name="Ultimate Tennis Quiz" description="A quiz app for tennis fans to test their knowledge of the sport and compete against each other. No longer on the App Store due to my lack of an Apple Developer account." tools="Built with Unity and C#." imageName="utq.png" flipped={false} />
+        <MobileProject link="https://github.com/jxhug/UltimateTennisQuiz" name="Ultimate Tennis Quiz" description="A quiz app for tennis fans to test their knowledge of the sport and compete against each other." tools="Built with Unity and C#." imageName="utq.png" flipped={false} />
     </div>  
     <div class="snap-center" bind:this={contactSection}>
         <Section>

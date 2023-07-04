@@ -8,7 +8,7 @@
 </script>
 
 <div class="overflow-clip h-screen sm:flex sm:snap-center hidden absolute sm:relative bg-darkwhite dark:bg-darkergray">
-    <div class={`absolute max-w-4xl max-h-4xl ${flipped ? "right-[40vw]" : "left-[40vw]"} translate-y-1/4`}>
+    <div class={`absolute max-w-4xl max-h-4xl ${flipped ? "right-[30vw]" : "left-[30vw]"} translate-y-1/4`}>
         <img class="object-scale-down animate hover" alt={`Screenshot of ${name}`} src="/images/projects/{imageName}">
     </div>
     <div class={`flex ${flipped ? "flex-row-reverse" : "flex-row"} grow self-center`}>
@@ -26,7 +26,7 @@
     </div>
 </div>
 
-<div class="flex flex-col justify-center h-screen visible sm:invisible relative sm:absolute bg-darkwhite">
+<div class="flex flex-col justify-center h-screen sm:hidden relative sm:absolute bg-darkwhite">
     <div class="max-w-4xl max-h-4xl w-fit justify-center flex">
         <img class="object-scale-down animate hover" alt={`Screenshot of ${name}`} src="/images/projects/{imageName}">
     </div>

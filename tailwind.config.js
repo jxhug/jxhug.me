@@ -31,7 +31,7 @@ export default {
             '1/20': '5%',
         },
         fontFamily: {
-            'apple': ['-apple-system', 'BlinkMacSystemFont', 'Segoe UI']
+            'apple': ['-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'sans-serif'],
         },
         colors: {
             'lightgreen': '#8DD9B2',

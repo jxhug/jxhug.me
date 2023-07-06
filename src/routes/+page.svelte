@@ -118,7 +118,7 @@
                 {#if !isSmallMedia}
                 <div class="justify-end w-screen translate-x-1/3">
                     <div>
-                        <img src="/images/pfps/pfp.jpg" alt="" class="md:h-40 lg:h-96 shadow-md rounded-3xl">
+                        <img src="/images/pfps/pfp.webp" alt="My profile picture of San Francisco" class="md:h-40 lg:h-96 shadow-md rounded-3xl">
                     </div>
                 </div>
                 {/if}

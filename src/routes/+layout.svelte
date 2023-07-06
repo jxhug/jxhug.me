@@ -2,4 +2,4 @@
     import "../app.css";
 </script>
 
-<slot />
+<slot class="m-0 p-0 overflow-auto"/>

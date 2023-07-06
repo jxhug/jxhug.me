@@ -26,13 +26,13 @@
     </div>
 </div>
 
-<div class="flex flex-col justify-center h-screen sm:hidden relative sm:absolute bg-darkwhite">
+<div class="flex flex-col justify-center h-screen sm:hidden relative sm:absolute bg-darkwhite dark:bg-darkergray">
     <div class="max-w-4xl max-h-4xl w-fit justify-center flex">
         <img class="object-scale-down animate hover" alt={`Screenshot of ${name}`} src="/images/projects/{imageName}">
     </div>
     <div class="flex">
         <a href={link} target="_blank" rel="noreferrer noopener" class="m-5 w-fit">
-            <div class="flex flex-col transition duration-300 hover:ease-in-out hover:scale-105 text-slate-600">
+            <div class="flex flex-col transition duration-300 hover:ease-in-out hover:scale-105 text-slate-600 dark:text-darkwhite">
                 <h2 class="text-4xl font-extrabold w-screen">{name}</h2>
                 <p class="text-base w-screen pr-5">
                     {description}

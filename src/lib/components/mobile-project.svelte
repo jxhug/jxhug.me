@@ -13,7 +13,7 @@
     </div>
     <div class={`flex ${flipped ? "flex-row-reverse" : "flex-row"} grow self-center`}>
         <a href={link} target="_blank" rel="noreferrer noopener" class="m-40">
-            <div class="flex flex-col transition duration-300 hover:ease-in-out hover:scale-105 text-slate-600 {flipped ? "text-right" : "text-left"}">
+            <div class="flex flex-col transition duration-300 hover:ease-in-out hover:scale-105 text-slate-600 dark:text-darkwhite {flipped ? "text-right" : "text-left"}">
                 <h2 class="text-6xl font-extrabold w-max">{name}</h2>
                 <p class="text-base">
                     {description}

@@ -97,7 +97,7 @@
         <Section>
             <div class="flex h-screen items-center">
                 <div class="justify-start w-screen">
-                    <div class="text-slate-800 dark:text-darkwhite text-left md:translate-x-1/4 space-y-4 font-medium text-sm sm:text-base md:text-ml object-scale-down p-5">
+                    <div class="text-slate-600 dark:text-darkwhite text-left md:translate-x-1/4 space-y-4 font-medium text-sm sm:text-base md:text-ml object-scale-down p-5">
                         <p>
                             I'm James, a {calculateAge(new Date(2008, 1, 6))} year old programmer based in San Francisco, California.
                             <br/><br/>

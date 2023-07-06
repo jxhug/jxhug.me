@@ -97,17 +97,17 @@
         <Section>
             <div class="flex h-screen items-center">
                 <div class="justify-start w-screen">
-                    <div class="text-slate-600 dark:text-darkwhite text-left md:translate-x-1/4 space-y-4 font-medium text-sm sm:text-base md:text-ml object-scale-down p-5">
+                    <div class="text-slate-800 dark:text-darkwhite text-left md:translate-x-1/4 space-y-4 font-medium text-sm sm:text-base md:text-ml object-scale-down p-5">
                         <p>
                             I'm James, a {calculateAge(new Date(2008, 1, 6))} year old programmer based in San Francisco, California.
                             <br/><br/>
-                            I started learning to program in C# using Unity for game development. There weren't many games to play on my Mac and this motivated me to try to make my own. This led to my first game, <button class="text-sky-600 dark:text-sky-300 hover:text-indigo-500 transition-all ease-linear" on:click={() => {
+                            I started learning to program in C# using Unity for game development. There weren't many games to play on my Mac and this motivated me to try to make my own. This led to my first game, <button class="text-blue-600 dark:text-sky-300 hover:text-indigo-500 transition-all ease-linear" on:click={() => {
                                 scrollToUTQ();
                             }}>Ultimate Tennis Quiz</button>, which was on the App Store in 2022.
                             <br/><br/>
-                            Now I'm in the midst of learning web development. I started out by making a web game to learn the basics of HTML, CSS, and JavaScript. I then moved on to learning Svelte, which is what this website is built with. You can find the <a class="text-sky-600 dark:text-sky-300 hover:text-indigo-500 transition-all ease-linear" href="https://github.com/jxhug/jxhug.me">source code</a> on Github.
+                            Now I'm in the midst of learning web development. I started out by making a web game to learn the basics of HTML, CSS, and JavaScript. I then moved on to learning Svelte, which is what this website is built with. You can find the <a class="text-blue-600 dark:text-sky-300 hover:text-indigo-500 transition-all ease-linear" href="https://github.com/jxhug/jxhug.me">source code</a> on Github.
                             <br/><br/>
-                            In the future, I'd like to get a better understanding of Swift, because I've only dabbled in it. Learning lower level languages like C++ and Rust would also be something I'd like to do in the future, along with collaborating with other developers. I've had a lot of fun working with other people on the game launcher <button class="text-sky-600 dark:text-sky-300 hover:text-indigo-500 transition-all ease-linear" on:click={() => {
+                            In the future, I'd like to get a better understanding of Swift, because I've only dabbled in it. Learning lower level languages like C++ and Rust would also be something I'd like to do in the future, along with collaborating with other developers. I've had a lot of fun working with other people on the game launcher <button class="text-blue-600 dark:text-sky-300 hover:text-indigo-500 transition-all ease-linear" on:click={() => {
                                 scrollToPhoenix();
                             }}>Phoenix</button>, and I'd like to do more projects like that in the future.
                             <br/><br/>

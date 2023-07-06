@@ -105,7 +105,7 @@
                                 scrollToUTQ();
                             }}>Ultimate Tennis Quiz</button>, which was on the App Store in 2022.
                             <br/><br/>
-                            Now I'm in the midst of learning web development. I started out by making a web game to learn the basics of HTML, CSS, and JavaScript. I then moved on to learning Svelte, which is what this website is built with. You can find the source code <a class="text-sky-500 dark:text-sky-300 hover:text-indigo-500 transition-all ease-linear" href="https://github.com/jxhug/jxhug.me">here</a>.
+                            Now I'm in the midst of learning web development. I started out by making a web game to learn the basics of HTML, CSS, and JavaScript. I then moved on to learning Svelte, which is what this website is built with. You can find the <a class="text-sky-500 dark:text-sky-300 hover:text-indigo-500 transition-all ease-linear" href="https://github.com/jxhug/jxhug.me">source code</a> on Github.
                             <br/><br/>
                             In the future, I'd like to get a better understanding of Swift, because I've only dabbled in it. Learning lower level languages like C++ and Rust would also be something I'd like to do in the future, along with collaborating with other developers. I've had a lot of fun working with other people on the game launcher <button class="text-sky-500 dark:text-sky-300 hover:text-indigo-500 transition-all ease-linear" on:click={() => {
                                 scrollToPhoenix();

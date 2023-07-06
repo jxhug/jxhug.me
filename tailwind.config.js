@@ -48,6 +48,7 @@ export default {
             'black-transparent-gradient': "linear-gradient(0deg, #111111, #1e1e1e, transparent)",
             'red-gradient': "linear-gradient(90deg, salmon, #ff3b3b, #ff9b57, salmon)",
             'orange-gradient': "linear-gradient(90deg, orange, #ff3b3b, #ff9b57, orange)",
+            'blue-gray-gradient': "linear-gradient(90deg, #475569, #075985, #0ea5e9, #075985)",
             'lightdesktopjames': 'url(/images/bgs/lightdesktopjames.webp)',
             'darkdesktopjames': 'url(/images/bgs/darkdesktopjames.webp)'
         },

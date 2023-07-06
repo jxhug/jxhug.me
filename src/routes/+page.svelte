@@ -75,18 +75,18 @@
             <div class="flex w-screen h-10 justify-center bg-darkwhite dark:bg-darkergray absolute">
             </div>
             <div class="flex w-screen justify-center bg-white-transparent-gradient dark:bg-black-transparent-gradient absolute -translate-y-5">
-                <SidebarButton name="Home" scroll={scrollToHome} isHovered={isHomeHovered} svgPath={homeSVGPath} {isSmallMedia}/>
-                <SidebarButton name="About" scroll={scrollToAbout} isHovered={isAboutHovered} svgPath={aboutSVGPath} {isSmallMedia}/>
-                <SidebarButton name="Projects" scroll={scrollToPhoenix} isHovered={isProjectsHovered} svgPath={projectsSVGPath} {isSmallMedia}/>
-                <SidebarButton name="Contact" scroll={scrollToContact} isHovered={isContactHovered} svgPath={contactSVGPath} {isSmallMedia}/>
+                <SidebarButton name="Home" scroll={scrollToHome} isHovered={isHomeHovered} svgPath={homeSVGPath} {isSmallMedia} ariaLabel="Home"/>
+                <SidebarButton name="About" scroll={scrollToAbout} isHovered={isAboutHovered} svgPath={aboutSVGPath} {isSmallMedia} ariaLabel="About"/>
+                <SidebarButton name="Projects" scroll={scrollToPhoenix} isHovered={isProjectsHovered} svgPath={projectsSVGPath} {isSmallMedia} ariaLabel="Projects"/>
+                <SidebarButton name="Contact" scroll={scrollToContact} isHovered={isContactHovered} svgPath={contactSVGPath} {isSmallMedia} ariaLabel="Contact"/>
             </div>
         </div>
         {:else}
         <div class="translate-x-10 h-screen flex flex-col justify-center">
-            <SidebarButton name="Home" scroll={scrollToHome} isHovered={isHomeHovered} svgPath={homeSVGPath} {isSmallMedia}/>
-            <SidebarButton name="About" scroll={scrollToAbout} isHovered={isAboutHovered} svgPath={aboutSVGPath} {isSmallMedia}/>
-            <SidebarButton name="Projects" scroll={scrollToPhoenix} isHovered={isProjectsHovered} svgPath={projectsSVGPath} {isSmallMedia}/>
-            <SidebarButton name="Contact" scroll={scrollToContact} isHovered={isContactHovered} svgPath={contactSVGPath} {isSmallMedia}/>
+            <SidebarButton name="Home" scroll={scrollToHome} isHovered={isHomeHovered} svgPath={homeSVGPath} {isSmallMedia} ariaLabel="Home"/>
+            <SidebarButton name="About" scroll={scrollToAbout} isHovered={isAboutHovered} svgPath={aboutSVGPath} {isSmallMedia} ariaLabel="About"/>
+            <SidebarButton name="Projects" scroll={scrollToPhoenix} isHovered={isProjectsHovered} svgPath={projectsSVGPath} {isSmallMedia} ariaLabel="Projects"/>
+            <SidebarButton name="Contact" scroll={scrollToContact} isHovered={isContactHovered} svgPath={contactSVGPath} {isSmallMedia} ariaLabel="Contact"/>
         </div>
         {/if}
     </div>

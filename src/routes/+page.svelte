@@ -101,7 +101,7 @@
                         <p>
                             I'm James, a {calculateAge(new Date(2008, 1, 6))} year old programmer based in San Francisco, California.
                             <br/><br/>
-                            I started learning to program in C# using Unity for game development. There weren't many games to play on my Mac and this motivated me to try to make my own. This led to my first game, <button class="text-sky-500 dark:text-sky-300 hover:text-indigo-500 transition-all ease-linear" on:click={() => {
+                            I started learning to program in C# using Unity for game development. There weren't many games to play on my Mac and this motivated me to try to make my own. This led to my first game, <button class="text-blue-600 dark:text-sky-300 hover:text-indigo-500 transition-all ease-linear" on:click={() => {
                                 scrollToUTQ();
                             }}>Ultimate Tennis Quiz</button>, which was on the App Store in 2022.
                             <br/><br/>

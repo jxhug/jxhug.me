@@ -32,6 +32,7 @@ export default {
         },
         fontFamily: {
             'apple': ['-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'sans-serif'],
+            'manrope': ['Manrope', 'sans-serif'],
         },
         colors: {
             'lightgreen': '#8DD9B2',
@@ -44,12 +45,11 @@ export default {
             'offdarkergray': '#1e1e1e',
         },
         backgroundImage: {
-            'white-transparent-gradient': "linear-gradient(0deg, #f2f2f2, #efefef, transparent)",
-            'black-transparent-gradient': "linear-gradient(0deg, #111111, #1e1e1e, transparent)",
-            'red-gradient': "linear-gradient(90deg, salmon, #ff3b3b, #ff9b57, salmon)",
+            'blue-gradient': "linear-gradient(90deg, #60a5fa, #22d3ee, #38bdf8, #60a5fa)",
             'orange-gradient': "linear-gradient(90deg, orange, #ff3b3b, #ff9b57, orange)",
-            'lightdesktopjames': 'url(/images/bgs/lightdesktopjames.webp)',
-            'darkdesktopjames': 'url(/images/bgs/darkdesktopjames.webp)'
+            'yosemite': 'url(/images/bgs/yosemite.webp)',
+            'homelight': 'linear-gradient(90deg, rgba(242,242,242,1) 33%, rgba(242,242,242,0.75) 70%, rgba(242,242,242,0) 100%)',
+            'homedark': 'linear-gradient(90deg, rgba(17,17,17,1) 50%, rgba(17,17,17,0.5) 70%, rgba(17,17,17,0) 100%)',
         },
         backgroundSize: {
             '200%': '200%',

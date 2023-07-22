@@ -1,12 +1,9 @@
 <script>    
 
-    import Section from "$lib/components/section.svelte";
     import Home from "$lib/components/home.svelte";
     import SidebarButton from "$lib/components/sidebar-button.svelte";
-    import DesktopProject from "$lib/components/desktop-project.svelte";
-    import MobileProject from "$lib/components/mobile-project.svelte";
+    import Project from "$lib/components/project.svelte";
     import ContactButton from "$lib/components/contact-button.svelte";
-    import ScrollArrow from "$lib/components/scroll-arrow.svelte";
 
     import { homeSVGPath, aboutSVGPath, projectsSVGPath, contactSVGPath, mailSVGPath, githubSVGPath, twitterSVGPath, discordSVGPath } from '$lib/svgs.js'
 
@@ -68,7 +65,7 @@
 
 
 
-<main class="font-apple overflow-hidden snap-y">
+<main class="font-manrope overflow-hidden snap-y">
     <div class="fixed z-10">
         {#if isSmallMedia}
         <div class="fixed inset-x-0 bottom-0 flex items-end justify-center">
@@ -94,54 +91,42 @@
         <Home />
     </div>
     <div class="snap-center" bind:this={aboutSection}>
-        <Section>
+        <div>
             <div class="flex h-screen items-center">
                 <div class="justify-start w-screen">
-                    <div class="text-slate-600 dark:text-darkwhite text-left md:translate-x-1/4 space-y-4 font-medium text-sm sm:text-base md:text-ml object-scale-down p-5">
-                        <p>
-                            I'm James, a {calculateAge(new Date(2008, 1, 6))} year old programmer based in San Francisco, California.
-                            <br/><br/>
-                            I started learning to program in C# using Unity for game development. There weren't many games to play on my Mac and this motivated me to try to make my own. This led to my first game, <button class="text-blue-600 dark:text-sky-300 hover:text-indigo-500 transition-all ease-linear" on:click={() => {
-                                scrollToUTQ();
-                            }}>Ultimate Tennis Quiz</button>, which was on the App Store in 2022.
-                            <br/><br/>
-                            Now I'm in the midst of learning web development. I started out by making a web game to learn the basics of HTML, CSS, and JavaScript. I then moved on to learning Svelte, which is what this website is built with. You can find the <a class="text-blue-600 dark:text-sky-300 hover:text-indigo-500 transition-all ease-linear" href="https://github.com/jxhug/jxhug.me">source code</a> on Github.
-                            <br/><br/>
-                            In the future, I'd like to get a better understanding of Swift, because I've only dabbled in it. Learning lower level languages like C++ and Rust would also be something I'd like to do in the future, along with collaborating with other developers. I've had a lot of fun working with other people on the game launcher <button class="text-blue-600 dark:text-sky-300 hover:text-indigo-500 transition-all ease-linear" on:click={() => {
-                                scrollToPhoenix();
-                            }}>Phoenix</button>, and I'd like to do more projects like that in the future.
-                            <br/><br/>
-                            You can view my projects that are polished enough to show off below.
-                        </p>
+                    <div class="text-slate-700 font-medium dark:text-darkwhite text-left md:translate-x-1/4 space-y-4 text-sm sm:text-base md:text-lg tracking-normal object-scale-down ">
+                        Hey there, I'm jxhug; a developer from California. I'm currently in my sophomore year of high school and I have a passion for software development, design, and game development. I want to learn more about low-level computing in the future by trying languages like Rust and C++. In my free time I enjoy playing tennis and video games.
+                        <br/>
+                        To learn more about what I've done see my <button type='button' class='text-sky-400 hover:text-sky-600 transition-colors ease-in-out duration-75' on:click={() => {
+                            scrollToPhoenix()
+                        }}>
+                            projects.
+                        </button>
                     </div>
                 </div>
-                {#if !isSmallMedia}
                 <div class="justify-end w-screen translate-x-1/3">
                     <div>
-                        <img src="/images/pfps/pfp.webp" alt="San Francisco skyline" class="md:h-40 lg:h-96 shadow-md rounded-3xl">
+                        <img src="/images/pfps/pfp.webp" alt="San Francisco" class="md:h-40 lg:h-96 shadow-md rounded-3xl">
                     </div>
                 </div>
-                {/if}
             </div> 
-        </Section>
+        </div>
     </div>
     <div bind:this={phoenixSection} class="snap-center justify-center">
-        <DesktopProject link="https://github.com/Shock9616/Phoenix" name="Phoenix" description="A lightweight and open source game launcher for macOS." tools="Built with Swift and SwiftUI." imageName="phoenix.webp" flipped={true} />
+        <Project link="https://github.com/Shock9616/Phoenix" name="Phoenix" description="A lightweight and open source game launcher for macOS." tools="Built with Swift and SwiftUI." imageName="phoenix.webp" flipped={true} />
     </div> 
-    <div bind:this={utqSection} class="snap-center">
-        <MobileProject link="https://github.com/jxhug/UltimateTennisQuiz" name="Ultimate Tennis Quiz" description="A quiz app for tennis fans to test their knowledge of the sport and compete against each other." tools="Built with Unity and C#." imageName="utq.webp" flipped={false} />
-    </div>  
+    <!-- <div bind:this={utqSection} class="snap-center">
+        <Project link="https://github.com/jxhug/UltimateTennisQuiz" name="Ultimate Tennis Quiz" description="A quiz app for tennis fans to test their knowledge of the sport and compete against each other." tools="Built with Unity and C#." imageName="utq.webp" flipped={false} />
+    </div>   -->
     <div class="snap-center" bind:this={contactSection}>
-        <Section>
-            <div class="flex h-screen items-center justify-center">
-                <div class="grid grid-cols-2 sm:grid-cols-4 gap-6 sm:gap-8 fill-slate-600 dark:fill-darkwhite">
-                    <ContactButton onclick={() => {window.location.href="mailto:james@jxhug.me"}} svgPath={mailSVGPath} ariaLabel="My Email" />
-                    <ContactButton onclick={() => {window.open("https://github.com/jxhug")}} svgPath={githubSVGPath} ariaLabel="My Github" />
-                    <ContactButton onclick={() => {window.open("https://twitter.com/@diskutility")}} svgPath={twitterSVGPath} ariaLabel="My Twitter" />
-                    <ContactButton onclick={() => {window.open("https://discord.com/users/463024798784815105")}} svgPath={discordSVGPath} ariaLabel="My Discord" />
-                </div>
-            </div> 
-        </Section>
+        <div class="flex h-screen items-center justify-center">
+            <div class="grid grid-cols-2 sm:grid-cols-4 gap-6 sm:gap-8 fill-slate-600 dark:fill-darkwhite">
+                <ContactButton onclick={() => {window.location.href="mailto:james@jxhug.me"}} svgPath={mailSVGPath} ariaLabel="My Email" />
+                <ContactButton onclick={() => {window.open("https://github.com/jxhug")}} svgPath={githubSVGPath} ariaLabel="My Github" />
+                <ContactButton onclick={() => {window.open("https://twitter.com/@diskutility")}} svgPath={twitterSVGPath} ariaLabel="My Twitter" />
+                <ContactButton onclick={() => {window.open("https://discord.com/users/463024798784815105")}} svgPath={discordSVGPath} ariaLabel="My Discord" />
+            </div>
+        </div> 
     </div>
 </main>
 

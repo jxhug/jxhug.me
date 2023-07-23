@@ -94,10 +94,10 @@
         <div>
             <div class="flex h-screen items-center">
                 <div class="justify-start w-screen">
-                    <div class="text-slate-700 font-medium dark:text-darkwhite text-left md:translate-x-1/4 space-y-4 text-sm sm:text-base md:text-lg tracking-normal object-scale-down ">
-                        Hey there, I'm jxhug; a developer from California. I'm currently in my sophomore year of high school and I have a passion for software development, design, and game development. I want to learn more about low-level computing in the future by trying languages like Rust and C++. In my free time I enjoy playing tennis and video games.
+                    <div class="text-slate-700 font-medium dark:text-darkwhite text-left md:translate-x-1/4 space-y-4 text-sm sm:text-base md:text-[1.05rem] tracking-normal object-scale-down ">
+                        Hey there, I'm jxhug; a developer from California. I'm currently in my sophomore year of high school and I have a passion for software development and design. In my free time I enjoy playing tennis and video games.
                         <br/>
-                        To learn more about what I've done see my <button type='button' class='text-sky-400 hover:text-sky-600 transition-colors ease-in-out duration-75' on:click={() => {
+                        To learn more about what I've done see my <button type='button' class='text-sky-500 hover:text-sky-700 dark:text-sky-400 dark:hover:text-sky-600 transition-colors ease-in-out duration-75' on:click={() => {
                             scrollToPhoenix()
                         }}>
                             projects.
@@ -121,7 +121,7 @@
     <div class="snap-center" bind:this={contactSection}>
         <div class="flex h-screen items-center justify-center">
             <div class="grid grid-cols-2 sm:grid-cols-4 gap-6 sm:gap-8 fill-slate-600 dark:fill-darkwhite">
-                <ContactButton onclick={() => {window.location.href="mailto:james@jxhug.me"}} svgPath={mailSVGPath} ariaLabel="My Email" />
+                <ContactButton onclick={() => {window.location.href="mailto:jxhug@jxhug.me"}} svgPath={mailSVGPath} ariaLabel="My Email" />
                 <ContactButton onclick={() => {window.open("https://github.com/jxhug")}} svgPath={githubSVGPath} ariaLabel="My Github" />
                 <ContactButton onclick={() => {window.open("https://twitter.com/@diskutility")}} svgPath={twitterSVGPath} ariaLabel="My Twitter" />
                 <ContactButton onclick={() => {window.open("https://discord.com/users/463024798784815105")}} svgPath={discordSVGPath} ariaLabel="My Discord" />

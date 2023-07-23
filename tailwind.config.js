@@ -48,7 +48,7 @@ export default {
             'blue-gradient': "linear-gradient(90deg, #60a5fa, #22d3ee, #38bdf8, #60a5fa)",
             'orange-gradient': "linear-gradient(90deg, orange, #ff3b3b, #ff9b57, orange)",
             'yosemite': 'url(/images/bgs/yosemite.webp)',
-            'homelight': 'linear-gradient(90deg, rgba(242,242,242,1) 33%, rgba(242,242,242,0.75) 70%, rgba(242,242,242,0) 100%)',
+            'homelight': 'linear-gradient(90deg, rgba(242,242,242,1) 33%, rgba(242,242,242,0.7) 70%, rgba(242,242,242,0) 100%)',
             'homedark': 'linear-gradient(90deg, rgba(17,17,17,1) 50%, rgba(17,17,17,0.5) 70%, rgba(17,17,17,0) 100%)',
         },
         backgroundSize: {

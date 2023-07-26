@@ -75,7 +75,7 @@
                     <div class="text-slate-700 font-medium dark:text-darkwhite text-left md:translate-x-1/4 space-y-4 text-sm sm:text-base md:text-[1.05rem] tracking-normal object-scale-down p-5">
                         Hey there, I'm James; a developer from California. I'm currently in my sophomore year of high school and I have a passion for software development and design. In my free time I enjoy playing tennis and video games.
                         <br/>
-                        To learn more about what I've done see my <button type='button' class='text-sky-500 hover:text-sky-700 dark:text-sky-400 dark:hover:text-sky-600 transition-colors ease-in-out duration-75' on:click={() => {
+                        To learn more about what I've done see my <button type='button' class='inline-block text-sky-500 hover:text-sky-700 dark:text-sky-400 dark:hover:text-sky-600 transition-colors ease-in-out duration-75' on:click={() => {
                             scrollToPhoenix()
                         }}>
                             projects.

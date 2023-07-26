@@ -1,5 +1,5 @@
 <div class="relative overflow-clip h-screen">
-    <div class="bg-yosemite bg-contain bg-right h-screen"></div>
+    <div class="sm:bg-yosemite bg-contain bg-right h-screen"></div>
     <div class="absolute inset-0 h-screen bg-homelight dark:bg-homedark"></div>
     <div class="absolute inset-0 sm:bg-gradient-to-t sm:from-darkwhite pointer-events-none sm:dark:from-darkergray snap-center">
         <div class="flex flex-col justify-center h-screen snap-center">
@@ -9,7 +9,7 @@
                 </h1>
                 <h1 class="">
                     I'm
-                    <span class="bg-blue-gradient animate-gradient-cycle bg-clip-text text-transparent bg-200%">jxhug</span>
+                    <span class="bg-blue-gradient animate-gradient-cycle bg-clip-text text-transparent bg-200%">James</span>
                 </h1>
             </div>
         </div>

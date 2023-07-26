@@ -7,40 +7,25 @@
 
     import { homeSVGPath, aboutSVGPath, projectsSVGPath, contactSVGPath, mailSVGPath, githubSVGPath, twitterSVGPath, discordSVGPath } from '$lib/svgs.js'
 
-    import { onMount } from 'svelte';
-
     let homeSection;
     let aboutSection;
+    let projectSection;
     let contactSection;
-    let utqSection;
-    let phoenixSection;
 
     let isHomeHovered = false;
     let isProjectsHovered = false;
     let isAboutHovered = false;
     let isContactHovered = false;
 
-    let isSmallMedia = false;
-
-    onMount(() => {
-        const mediaQuery = window.matchMedia('(max-width: 768px)');
-        handleMediaChange(mediaQuery);
-        mediaQuery.addEventListener('change', handleMediaChange);
-    });
-
-    function handleMediaChange(event) {
-        isSmallMedia = event.matches;
-    }
-
-    const calculateAge = (birthday) => {
-        var today = new Date();
-        var age = today.getFullYear() - birthday.getFullYear();
-        var m = today.getMonth() - birthday.getMonth();
-        if (m < 0 || (m === 0 && today.getDate() < birthday.getDate())) {
-            age--;
-        }
-        return age;
-    }
+    // const calculateAge = (birthday) => {
+    //     var today = new Date();
+    //     var age = today.getFullYear() - birthday.getFullYear();
+    //     var m = today.getMonth() - birthday.getMonth();
+    //     if (m < 0 || (m === 0 && today.getDate() < birthday.getDate())) {
+    //         age--;
+    //     }
+    //     return age;
+    // }
 
     const scrollToHome = () => {
         homeSection.scrollIntoView({ behavior: 'smooth' });
@@ -50,12 +35,8 @@
         aboutSection.scrollIntoView({ behavior: 'smooth' });
     }
 
-    const scrollToUTQ = () => {
-        utqSection.scrollIntoView({ behavior: 'smooth' });
-    }
-
     const scrollToPhoenix = () => {
-        phoenixSection.scrollIntoView({ behavior: 'smooth' });
+        projectSection.scrollIntoView({ behavior: 'smooth' });
     }
 
     const scrollToContact = () => {
@@ -67,25 +48,22 @@
 
 <main class="font-manrope overflow-hidden snap-y">
     <div class="fixed z-10">
-        {#if isSmallMedia}
-        <div class="fixed inset-x-0 bottom-0 flex items-end justify-center">
+        <div class="fixed inset-x-0 bottom-0 flex items-end justify-center sm:hidden">
             <div class="flex w-screen h-10 justify-center bg-darkwhite dark:bg-darkergray absolute">
             </div>
-            <div class="flex w-screen justify-center bg-white-transparent-gradient dark:bg-black-transparent-gradient absolute -translate-y-5">
-                <SidebarButton name="Home" scroll={scrollToHome} isHovered={isHomeHovered} svgPath={homeSVGPath} {isSmallMedia} ariaLabel="Home"/>
-                <SidebarButton name="About" scroll={scrollToAbout} isHovered={isAboutHovered} svgPath={aboutSVGPath} {isSmallMedia} ariaLabel="About"/>
-                <SidebarButton name="Projects" scroll={scrollToPhoenix} isHovered={isProjectsHovered} svgPath={projectsSVGPath} {isSmallMedia} ariaLabel="Projects"/>
-                <SidebarButton name="Contact" scroll={scrollToContact} isHovered={isContactHovered} svgPath={contactSVGPath} {isSmallMedia} ariaLabel="Contact"/>
+            <div class="flex w-screen justify-center bg-gradient-to-t from-darkwhite via-darkwhite dark:from-darkergray dark:via-darkergray absolute -translate-y-5">
+                <SidebarButton name="Home" scroll={scrollToHome} isHovered={isHomeHovered} svgPath={homeSVGPath} ariaLabel="Home"/>
+                <SidebarButton name="About" scroll={scrollToAbout} isHovered={isAboutHovered} svgPath={aboutSVGPath} ariaLabel="About"/>
+                <SidebarButton name="Projects" scroll={scrollToPhoenix} isHovered={isProjectsHovered} svgPath={projectsSVGPath} ariaLabel="Projects"/>
+                <SidebarButton name="Contact" scroll={scrollToContact} isHovered={isContactHovered} svgPath={contactSVGPath} ariaLabel="Contact"/>
             </div>
         </div>
-        {:else}
-        <div class="translate-x-10 h-screen flex flex-col justify-center">
-            <SidebarButton name="Home" scroll={scrollToHome} isHovered={isHomeHovered} svgPath={homeSVGPath} {isSmallMedia} ariaLabel="Home"/>
-            <SidebarButton name="About" scroll={scrollToAbout} isHovered={isAboutHovered} svgPath={aboutSVGPath} {isSmallMedia} ariaLabel="About"/>
-            <SidebarButton name="Projects" scroll={scrollToPhoenix} isHovered={isProjectsHovered} svgPath={projectsSVGPath} {isSmallMedia} ariaLabel="Projects"/>
-            <SidebarButton name="Contact" scroll={scrollToContact} isHovered={isContactHovered} svgPath={contactSVGPath} {isSmallMedia} ariaLabel="Contact"/>
+        <div class="translate-x-10 h-screen flex-col justify-center hidden sm:flex">
+            <SidebarButton name="Home" scroll={scrollToHome} isHovered={isHomeHovered} svgPath={homeSVGPath} ariaLabel="Home"/>
+            <SidebarButton name="About" scroll={scrollToAbout} isHovered={isAboutHovered} svgPath={aboutSVGPath} ariaLabel="About"/>
+            <SidebarButton name="Projects" scroll={scrollToPhoenix} isHovered={isProjectsHovered} svgPath={projectsSVGPath} ariaLabel="Projects"/>
+            <SidebarButton name="Contact" scroll={scrollToContact} isHovered={isContactHovered} svgPath={contactSVGPath} ariaLabel="Contact"/>
         </div>
-        {/if}
     </div>
     <div class="snap-center" bind:this={homeSection}>
         <Home />
@@ -94,8 +72,8 @@
         <div>
             <div class="flex h-screen items-center">
                 <div class="justify-start w-screen">
-                    <div class="text-slate-700 font-medium dark:text-darkwhite text-left md:translate-x-1/4 space-y-4 text-sm sm:text-base md:text-[1.05rem] tracking-normal object-scale-down ">
-                        Hey there, I'm jxhug; a developer from California. I'm currently in my sophomore year of high school and I have a passion for software development and design. In my free time I enjoy playing tennis and video games.
+                    <div class="text-slate-700 font-medium dark:text-darkwhite text-left md:translate-x-1/4 space-y-4 text-sm sm:text-base md:text-[1.05rem] tracking-normal object-scale-down p-5">
+                        Hey there, I'm James; a developer from California. I'm currently in my sophomore year of high school and I have a passion for software development and design. In my free time I enjoy playing tennis and video games.
                         <br/>
                         To learn more about what I've done see my <button type='button' class='text-sky-500 hover:text-sky-700 dark:text-sky-400 dark:hover:text-sky-600 transition-colors ease-in-out duration-75' on:click={() => {
                             scrollToPhoenix()
@@ -104,7 +82,7 @@
                         </button>
                     </div>
                 </div>
-                <div class="justify-end w-screen translate-x-1/3">
+                <div class="hidden sm:block justify-end w-screen translate-x-1/3">
                     <div>
                         <img src="/images/pfps/pfp.webp" alt="San Francisco" class="md:h-40 lg:h-96 shadow-md rounded-3xl">
                     </div>
@@ -112,7 +90,7 @@
             </div> 
         </div>
     </div>
-    <div bind:this={phoenixSection} class="snap-center justify-center">
+    <div bind:this={projectSection} class="snap-center m-auto w-[90vw]">
         <Project link="https://github.com/Shock9616/Phoenix" name="Phoenix" description="A lightweight and open source game launcher for macOS." tools="Built with Swift and SwiftUI." imageName="phoenix.webp" flipped={true} />
     </div> 
     <!-- <div bind:this={utqSection} class="snap-center">

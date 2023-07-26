@@ -72,25 +72,26 @@
         <div>
             <div class="flex h-screen items-center">
                 <div class="justify-start w-screen">
-                    <div class="text-slate-700 font-medium dark:text-darkwhite text-left md:translate-x-1/4 space-y-4 text-sm sm:text-base md:text-[1.05rem] tracking-normal object-scale-down p-5">
+                    <div class="text-slate-700 font-medium dark:text-darkwhite text-left md:translate-x-1/4 text-lg sm:text-base md:text-[1.05rem] tracking-normal object-scale-down p-5 sm:px-40 lg:p-0">
                         Hey there, I'm James; a developer from California. I'm currently in my sophomore year of high school and I have a passion for software development and design. In my free time I enjoy playing tennis and video games.
                         <br/>
-                        To learn more about what I've done see my <button type='button' class='inline-block text-sky-500 hover:text-sky-700 dark:text-sky-400 dark:hover:text-sky-600 transition-colors ease-in-out duration-75' on:click={() => {
+                        <br/>
+                        To learn more about what I've done see my <button type='button' class='inline text-sky-500 hover:text-sky-700 dark:text-sky-400 dark:hover:text-sky-600 transition-colors ease-in-out duration-75' on:click={() => {
                             scrollToPhoenix()
                         }}>
                             projects.
                         </button>
                     </div>
                 </div>
-                <div class="hidden sm:block justify-end w-screen translate-x-1/3">
-                    <div>
-                        <img src="/images/pfps/pfp.webp" alt="San Francisco" class="md:h-40 lg:h-96 shadow-md rounded-3xl">
+                <div class="hidden md:block justify-end w-screen translate-x-1/3">
+                    <div class="p-10 object-scale-down w-1/2">
+                        <img src="/images/pfps/pfp.webp" alt="San Francisco" class="md:w-96 shadow-md rounded-3xl object-scale-down">
                     </div>
                 </div>
             </div> 
         </div>
     </div>
-    <div bind:this={projectSection} class="snap-center m-auto w-[90vw]">
+    <div bind:this={projectSection} class="snap-center w-[90vw]">
         <Project link="https://github.com/Shock9616/Phoenix" name="Phoenix" description="A lightweight and open source game launcher for macOS." tools="Built with Swift and SwiftUI." imageName="phoenix.webp" flipped={true} />
     </div> 
     <!-- <div bind:this={utqSection} class="snap-center">

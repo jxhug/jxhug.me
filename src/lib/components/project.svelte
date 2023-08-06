@@ -8,12 +8,8 @@
 </script>
 
 <div class="w-full flex justify-evenly mb-20 sm:mx-32 flex-col {flipped ? 'md:flex-row-reverse' : 'md:flex-row'}">
-    <div class="dark:hidden w-screen md:w-1/2 flex flex-col sm:w-3/4">
-        <img src="images/projects/{imageName}.webp" alt="Screenshot of {name}" class="drop-shadow-sm justify-center">
-    </div>
-    <div class="hidden w-screen md:w-1/2 dark:flex flex-col sm:w-3/4">
-        <img src="images/projects/{imageName}-dark.webp" alt="Screenshot of {name}" class="drop-shadow-sm justify-center">
-    </div>
+    <img src="images/projects/{imageName}.webp" alt="Screenshot of {name}" class="dark:hidden drop-shadow-sm justify-center md:w-1/2 flex flex-col sm:w-3/4 w-screen">
+    <img src="images/projects/{imageName}-dark.webp" alt="Screenshot of {name}" class="drop-shadow-sm justify-center hidden w-screen md:w-1/2 dark:flex flex-col sm:w-3/4">
     <div class="w-screen md:w-2/5 flex flex-col justify-center px-10 text-slate-700 dark:text-white">
         <h1 class="font-bold text-5xl">
             {name}

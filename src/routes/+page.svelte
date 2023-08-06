@@ -92,7 +92,7 @@
         </div>
     </div>
     <div bind:this={projectSection} class="snap-center w-[90vw]">
-        <Project link="https://github.com/Shock9616/Phoenix" name="Phoenix" description="A lightweight and open source game launcher for macOS." tools="Built with Swift and SwiftUI." imageName="phoenix.webp" flipped={true} />
+        <Project link="https://github.com/Shock9616/Phoenix" name="Phoenix" description="A lightweight and open source game launcher for macOS." tools="Built with Swift and SwiftUI." imageName="phoenix" flipped={true} />
     </div> 
     <!-- <div bind:this={utqSection} class="snap-center">
         <Project link="https://github.com/jxhug/UltimateTennisQuiz" name="Ultimate Tennis Quiz" description="A quiz app for tennis fans to test their knowledge of the sport and compete against each other." tools="Built with Unity and C#." imageName="utq.webp" flipped={false} />

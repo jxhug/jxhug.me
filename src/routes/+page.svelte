@@ -35,7 +35,7 @@
         aboutSection.scrollIntoView({ behavior: 'smooth' });
     }
 
-    const scrollToPhoenix = () => {
+    const scrollToProjects = () => {
         projectSection.scrollIntoView({ behavior: 'smooth' });
     }
 
@@ -54,14 +54,14 @@
             <div class="flex w-screen justify-center bg-gradient-to-t from-darkwhite via-darkwhite dark:from-darkergray dark:via-darkergray absolute -translate-y-5">
                 <SidebarButton name="Home" scroll={scrollToHome} isHovered={isHomeHovered} svgPath={homeSVGPath} ariaLabel="Home"/>
                 <SidebarButton name="About" scroll={scrollToAbout} isHovered={isAboutHovered} svgPath={aboutSVGPath} ariaLabel="About"/>
-                <SidebarButton name="Projects" scroll={scrollToPhoenix} isHovered={isProjectsHovered} svgPath={projectsSVGPath} ariaLabel="Projects"/>
+                <SidebarButton name="Projects" scroll={scrollToProjects} isHovered={isProjectsHovered} svgPath={projectsSVGPath} ariaLabel="Projects"/>
                 <SidebarButton name="Contact" scroll={scrollToContact} isHovered={isContactHovered} svgPath={contactSVGPath} ariaLabel="Contact"/>
             </div>
         </div>
         <div class="translate-x-10 h-screen flex-col justify-center hidden sm:flex">
             <SidebarButton name="Home" scroll={scrollToHome} isHovered={isHomeHovered} svgPath={homeSVGPath} ariaLabel="Home"/>
             <SidebarButton name="About" scroll={scrollToAbout} isHovered={isAboutHovered} svgPath={aboutSVGPath} ariaLabel="About"/>
-            <SidebarButton name="Projects" scroll={scrollToPhoenix} isHovered={isProjectsHovered} svgPath={projectsSVGPath} ariaLabel="Projects"/>
+            <SidebarButton name="Projects" scroll={scrollToProjects} isHovered={isProjectsHovered} svgPath={projectsSVGPath} ariaLabel="Projects"/>
             <SidebarButton name="Contact" scroll={scrollToContact} isHovered={isContactHovered} svgPath={contactSVGPath} ariaLabel="Contact"/>
         </div>
     </div>
@@ -72,12 +72,12 @@
         <div>
             <div class="flex h-screen items-center">
                 <div class="justify-start w-screen">
-                    <div class="text-slate-700 font-medium dark:text-darkwhite text-left md:translate-x-1/4 text-lg sm:text-base md:text-[1.05rem] tracking-normal object-scale-down p-5 sm:px-40 lg:p-0">
+                    <div class="text-slate-700 font-medium dark:text-darkwhite text-left md:translate-x-1/4 text-lg lg:text-xl sm:text-base md:text-[1.05rem] tracking-normal object-scale-down p-5 sm:px-40 lg:p-0">
                         Hey there, I'm James; a developer from California. I'm currently in my sophomore year of high school and I have a passion for software development and design. In my free time I enjoy working on various coding projects, playing tennis, and playing video games.
                         <br/>
                         <br/>
                         To learn more about what I've done see my <button type='button' class='inline text-sky-500 hover:text-sky-700 dark:text-sky-400 dark:hover:text-sky-600 transition-colors ease-in-out duration-75' on:click={() => {
-                            scrollToPhoenix()
+                            scrollToProjects()
                         }}>
                             projects.
                         </button>
@@ -91,12 +91,14 @@
             </div> 
         </div>
     </div>
-    <div bind:this={projectSection} class="snap-center w-[90vw]">
-        <Project link="https://github.com/Shock9616/Phoenix" name="Phoenix" description="A lightweight and open source game launcher for macOS." tools="Built with Swift and SwiftUI." imageName="phoenix" flipped={true} />
-    </div> 
-    <!-- <div bind:this={utqSection} class="snap-center">
-        <Project link="https://github.com/jxhug/UltimateTennisQuiz" name="Ultimate Tennis Quiz" description="A quiz app for tennis fans to test their knowledge of the sport and compete against each other." tools="Built with Unity and C#." imageName="utq.webp" flipped={false} />
-    </div>   -->
+    <div class="h-screen py-10" bind:this={projectSection}>
+        <div class="snap-center w-[90vw] h-1/2">
+            <Project link="https://github.com/Shock9616/Phoenix" name="Phoenix" description="A lightweight and open source game launcher for macOS." tools="Built with Swift and SwiftUI." imageName="phoenix" flipped={true} />
+        </div> 
+        <div class="snap-center w-[90vw] h-1/2">
+            <Project link="https://github.com/jxhug/UltimateTennisQuiz" name="Ultimate Tennis Quiz" description="A quiz app for tennis fans to test their knowledge of the sport and compete against each other. Was on the App Store from 2022-2023." tools="Built with Unity and C#." imageName="utq" flipped={false} dark={false}/>
+        </div>  
+    </div>
     <div class="snap-center" bind:this={contactSection}>
         <div class="flex h-screen items-center justify-center">
             <div class="grid grid-cols-2 sm:grid-cols-4 gap-6 sm:gap-8 fill-slate-700 dark:fill-darkwhite">

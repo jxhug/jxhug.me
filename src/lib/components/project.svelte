@@ -5,14 +5,14 @@
     export let tools;
     export let imageName;
     export let flipped = false;
-    export let dark = true;
+    export let mobile = false;
 </script>
 
 <div class="w-full h-full flex justify-evenly sm:mx-32 flex-col {flipped ? 'md:flex-row-reverse' : 'md:flex-row'}">
-    {#if dark}
+    {#if !mobile}
     <div class="justify-center flex items-start">
-        <img src="images/projects/{imageName}.webp" alt="Screenshot of {name}" class="dark:hidden drop-shadow-sm justify-center flex lg:h-[40rem]">
-        <img src="images/projects/{imageName}-dark.webp" alt="Screenshot of {name}" class="drop-shadow-sm justify-center hidden dark:flex lg:h-[40rem]">
+        <img src="images/projects/{imageName}.webp" alt="Screenshot of {name}" class="dark:hidden drop-shadow-sm justify-center flex lg:h-[38rem]">
+        <img src="images/projects/{imageName}-dark.webp" alt="Screenshot of {name}" class="drop-shadow-sm justify-center hidden dark:flex lg:h-[38rem]">
     </div>
     {:else}
     <div class="justify-center flex items-end">

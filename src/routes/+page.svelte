@@ -95,10 +95,10 @@
         <Project link="https://github.com/Shock9616/Phoenix" name="Phoenix" description="A lightweight and open source game launcher for macOS." tools="Built with Swift and SwiftUI." imageName="phoenix" flipped={true} />
     </div> 
     <div class="snap-center w-[90vw] h-1/2">
-        <Project link="https://github.com/jxhug/UltimateTennisQuiz" name="Ultimate Tennis Quiz" description="A quiz app for tennis fans to test their knowledge of the sport and compete against each other. Was on the App Store from 2021-2023." tools="Built with Unity and C#." imageName="utq" flipped={false} dark={false}/>
+        <Project link="https://www.spigotmc.org/resources/biomerace.96241/" name="BiomeRace" description="A Minecraft mini-game where people race against each other to see who can find a random biome first!" tools="Built with Java and Spigot." imageName="biomerace" flipped={false} dark={true}/>
     </div>  
     <div class="snap-center w-[90vw] h-1/2">
-        <Project link="https://www.spigotmc.org/resources/biomerace.96241/" name="BiomeRace" description="A Minecraft mini-game where people race against each other to see who can find a random biome first!" tools="Built with Java and Spigot." imageName="biomerace" flipped={true} dark={true}/>
+        <Project link="https://github.com/jxhug/UltimateTennisQuiz" name="Ultimate Tennis Quiz" description="A quiz app for tennis fans to test their knowledge of the sport and compete against each other. Was on the App Store from 2021-2023." tools="Built with Unity and C#." imageName="utq" flipped={true} dark={false}/>
     </div>  
     <div class="snap-center" bind:this={contactSection}>
         <div class="flex h-screen items-center justify-center">

@@ -46,7 +46,7 @@
 
 
 
-<main class="font-manrope overflow-hidden snap-y">
+<main class="font-manrope overflow-hidden">
     <div class="fixed z-10">
         <div class="fixed inset-x-0 bottom-0 flex items-end justify-center sm:hidden">
             <div class="flex w-screen h-10 justify-center bg-darkwhite dark:bg-darkergray absolute">
@@ -65,10 +65,10 @@
             <SidebarButton name="Contact" scroll={scrollToContact} isHovered={isContactHovered} svgPath={contactSVGPath} ariaLabel="Contact"/>
         </div>
     </div>
-    <div class="snap-center" bind:this={homeSection}>
+    <div bind:this={homeSection}>
         <Home />
     </div>
-    <div class="snap-center" bind:this={aboutSection}>
+    <div bind:this={aboutSection}>
         <div>
             <div class="flex h-screen items-center">
                 <div class="justify-start w-screen">
@@ -92,17 +92,17 @@
         </div>
     </div>
     <div bind:this={projectSection}>
-        <div class="snap-center w-[90vw] h-1/2">
+        <div class=" w-[90vw] h-1/2">
             <Project link="https://github.com/Shock9616/Phoenix" name="Phoenix" description="A lightweight and open source game launcher for macOS." tools="Built with Swift and SwiftUI." imageName="phoenix" flipped={true} mobile={false} />
         </div> 
-        <div class="snap-center w-[90vw] h-1/2">
+        <div class=" w-[90vw] h-1/2">
             <Project link="https://www.spigotmc.org/resources/biomerace.96241/" name="BiomeRace" description="A Minecraft plugin where players race to see who can find a random biome first!" tools="Built with Java and Spigot." imageName="biomerace" flipped={false} mobile={false}/>
         </div>  
-        <div class="snap-center w-[90vw] h-1/2">
+        <div class=" w-[90vw] h-1/2">
             <Project link="https://github.com/jxhug/UltimateTennisQuiz" name="Ultimate Tennis Quiz" description="A quiz app for tennis fans to test their knowledge of the sport and compete against each other. Was on the App Store from 2021-2023." tools="Built with Unity and C#." imageName="utq" flipped={true} mobile={true}/>
         </div>  
     </div>
-    <div class="snap-center" bind:this={contactSection}>
+    <div  bind:this={contactSection}>
         <div class="flex h-screen items-center justify-center">
             <div class="grid grid-cols-2 sm:grid-cols-4 gap-6 sm:gap-8 fill-slate-700 dark:fill-darkwhite">
                 <ContactButton onclick={() => {window.location.href="mailto:jxhug@jxhug.me"}} svgPath={mailSVGPath} ariaLabel="My Email" />

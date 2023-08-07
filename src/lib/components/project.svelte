@@ -11,8 +11,8 @@
 <div class="w-full h-full flex justify-evenly sm:mx-32 flex-col {flipped ? 'md:flex-row-reverse' : 'md:flex-row'}">
     {#if !mobile}
     <div class="justify-center flex items-start">
-        <img src="images/projects/{imageName}.webp" alt="Screenshot of {name}" class="dark:hidden drop-shadow-sm justify-center flex lg:h-[38rem]">
-        <img src="images/projects/{imageName}-dark.webp" alt="Screenshot of {name}" class="drop-shadow-sm justify-center hidden dark:flex lg:h-[38rem]">
+        <img src="images/projects/{imageName}.webp" alt="Screenshot of {name}" class="dark:hidden drop-shadow-sm justify-center flex xl:h-[38rem]">
+        <img src="images/projects/{imageName}-dark.webp" alt="Screenshot of {name}" class="drop-shadow-sm justify-center hidden dark:flex xl:h-[38rem]">
     </div>
     {:else}
     <div class="justify-center flex items-end">
@@ -21,7 +21,7 @@
     {/if}
     <div class="w-screen md:w-2/5 flex flex-col justify-center px-10 text-slate-700 dark:text-white">
         <div class="flex {flipped ? 'flex-row' : 'flex-row md:flex-row-reverse'}">
-            <h1 class="font-bold text-5xl inline leading-tight sm:leading-normal">
+            <h1 class="font-bold text-5xl inline leading-tight">
                 {name}
             </h1>
             <button class="inline hover:scale-102 px-2" on:click={() => {

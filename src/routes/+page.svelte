@@ -93,7 +93,7 @@
     </div>
     <div bind:this={projectSection} class="space-y-32 md:space-y-20 lg:space-y-0">
         <div class=" w-[90vw] h-1/2">
-            <Project link="/phoenix" name="Phoenix" description="A lightweight and open source game launcher for macOS." tools="Built with Swift and SwiftUI." imageName="phoenix" flipped={true} mobile={false} />
+            <Project link="/phoenix" name="Phoenix" description="A lightweight and open source game launcher for macOS." tools="Built with Swift and SwiftUI." imageName="phoenix" flipped={true} mobile={false} route={true} />
         </div> 
         <div class=" w-[90vw] h-1/2">
             <Project link="https://www.spigotmc.org/resources/biomerace.96241/" name="BiomeRace" description="A Minecraft plugin where players race to see who can find a random biome first!" tools="Built with Java and Spigot." imageName="biomerace" flipped={false} mobile={false}/>

@@ -50,6 +50,7 @@ export default {
             'yosemite': 'url(/images/bgs/yosemite.webp)',
             'homelight': 'linear-gradient(90deg, rgba(242,242,242,1) 33%, rgba(242,242,242,0.7) 70%, rgba(242,242,242,0) 100%)',
             'homedark': 'linear-gradient(90deg, rgba(17,17,17,1) 50%, rgba(17,17,17,0.5) 70%, rgba(17,17,17,0) 100%)',
+            'phoenix' : 'url(/images/bgs/phoenix.webp)',
         },
         backgroundSize: {
             '200%': '200%',
@@ -68,6 +69,12 @@ export default {
                 '0%': { backgroundPosition: '0%' },
                 '100%': { backgroundPosition: '-200%' },
             }
+        },
+        dropShadow: {
+            '3xl': '0 35px 35px rgba(0, 0, 0, 0.25)',
+            '4xl-orange': [
+                '0 35px 35px rgba(180, 80, 60, 0.5)',
+            ]
         }
     },
   },

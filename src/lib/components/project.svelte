@@ -16,7 +16,7 @@
     </div>
     {:else}
     <div class="justify-center flex items-end">
-        <img src="images/projects/{imageName}.webp" alt="Screenshot of {name}" class="drop-shadow-sm justify-center flex h-[15rem] md:h-[35rem]">
+        <img src="images/projects/{imageName}.webp" alt="Screenshot of {name}" class="drop-shadow-lg justify-center flex h-[15rem] md:h-[35rem]">
     </div>
     {/if}
     <div class="w-screen md:w-2/5 flex flex-col justify-center px-10 text-slate-700 dark:text-white">

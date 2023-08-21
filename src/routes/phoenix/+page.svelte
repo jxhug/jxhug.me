@@ -2,7 +2,7 @@
     import { scrollTo } from "svelte-scrollto";
 
     const download = () => {
-        window.open('https://github.com/Shock9616/Phoenix/releases/download/v0.0.7-alpha/Phoenix.dmg')
+        window.open('https://github.com/jxhug/Phoenix/releases/download/v0.0.6/Phoenix.zip')
     }
 </script>
 

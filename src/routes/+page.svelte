@@ -1,9 +1,10 @@
 <script>    
-
     import Home from "$lib/components/home.svelte";
     import SidebarButton from "$lib/components/sidebar-button.svelte";
     import Project from "$lib/components/project.svelte";
     import ContactButton from "$lib/components/contact-button.svelte";
+
+    import { MetaTags } from "svelte-meta-tags";
 
     import { homeSVGPath, aboutSVGPath, projectsSVGPath, contactSVGPath, mailSVGPath, githubSVGPath, twitterSVGPath, discordSVGPath } from '$lib/svgs.js'
 
@@ -43,6 +44,32 @@
         contactSection.scrollIntoView({ behavior: 'smooth' });
     }
 </script>
+
+<MetaTags
+  title="James Hughes"
+  description="Hey there, I'm James; a developer from California."
+  openGraph={{
+    url: 'https://www.jxhug.me',
+    title: 'James Hughes',
+    description: "Hey there, I'm James; a developer from California.",
+    images: [
+        {
+            url: '/images/favicon.webp',
+            width: 512,
+            height: 512,
+            alt: 'San Francisco'
+        }
+    ],
+    site_name: 'James Hughes'
+  }}
+  twitter={{
+    handle: '@diskutility',
+    title: 'James Hughes',
+    description: "Hey there, I'm James; a developer from California.",
+    image: '/images/favicon.webp',
+    imageAlt: 'San Francisco'
+  }}
+/>
 
 
 

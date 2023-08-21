@@ -24,6 +24,7 @@
 	"dependencies": {
 		"@icons-pack/svelte-simple-icons": "^3.0.0",
 		"boxicons": "^2.1.4",
+		"svelte-meta-tags": "^3.0.0",
 		"svelte-particles": "^2.10.1",
 		"svelte-scrollto": "^0.2.0"
 	}

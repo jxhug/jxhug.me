@@ -1,10 +1,38 @@
 <script>
     import { scrollTo } from "svelte-scrollto";
+    import { MetaTags } from "svelte-meta-tags";
 
     const download = () => {
         window.open('https://github.com/jxhug/Phoenix/releases/download/v0.0.6/Phoenix.zip')
     }
 </script>
+
+<MetaTags
+  title="Phoenix Game Launcher"
+  description="A beautiful macOS game launcher made with SwiftUI."
+  openGraph={{
+    url: 'https://www.jxhug.me/phoenix',
+    title: 'Phoenix Game Launcher',
+    description: 'A beautiful macOS game launcher made with SwiftUI.',
+    images: [
+        {
+            url: '/images/projects/phoenix-icon.webp',
+            width: 512,
+            height: 512,
+            alt: 'Phoenix Icon'
+        }
+    ],
+    site_name: 'Phoenix Game Launcher'
+  }}
+  twitter={{
+    handle: '@diskutility',
+    cardType: 'summary_large_image',
+    title: 'Phoenix Game Launcher',
+    description: 'A beautiful macOS game launcher made with SwiftUI.',
+    image: '/images/projects/phoenix-icon.webp',
+    imageAlt: 'Phoenix Icon'
+  }}
+/>
 
 <div class="font-apple bg-white dark:bg-darkergray w-screen snap-y snap-mandatory flex flex-col overflow-y-scroll" id="main">
     <div class="w-screen h-screen bg-gradient-to-b from-orange-100 dark:from-orange-900 snap-start">

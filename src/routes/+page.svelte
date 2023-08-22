@@ -92,7 +92,7 @@
             <SidebarButton name="Contact" scroll={scrollToContact} isHovered={isContactHovered} svgPath={contactSVGPath} ariaLabel="Contact"/>
         </div>
     </div>
-    <div bind:this={homeSection}>
+    <div bind:this={homeSection} class="h-screen">
         <Home />
     </div>
     <div bind:this={aboutSection}>

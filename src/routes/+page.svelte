@@ -134,7 +134,7 @@
     <div  bind:this={contactSection}>
         <div class="flex h-screen items-center justify-center">
             <div class="grid grid-cols-2 sm:grid-cols-4 gap-6 sm:gap-8 fill-slate-700 dark:fill-darkwhite">
-                <ContactButton onclick={() => {window.location.href="mailto:jxhug@jxhug.me"}} svgPath={mailSVGPath} ariaLabel="My Email" />
+                <ContactButton onclick={() => {window.location.href="mailto:james@jxhug.me"}} svgPath={mailSVGPath} ariaLabel="My Email" />
                 <ContactButton onclick={() => {window.open("https://github.com/jxhug")}} svgPath={githubSVGPath} ariaLabel="My Github" />
                 <ContactButton onclick={() => {window.open("https://twitter.com/@diskutility")}} svgPath={twitterSVGPath} ariaLabel="My Twitter" />
                 <ContactButton onclick={() => {window.open("https://discord.com/users/463024798784815105")}} svgPath={discordSVGPath} ariaLabel="My Discord" />

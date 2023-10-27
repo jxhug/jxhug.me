@@ -11,8 +11,8 @@
 <div class="w-full h-full flex justify-evenly sm:mx-32 flex-col {flipped ? 'md:flex-row-reverse' : 'md:flex-row'}">
     {#if !mobile}
     <div class="justify-center flex items-start">
-        <img src="images/projects/{imageName}.webp" alt="Screenshot of {name}" class="dark:hidden drop-shadow-sm justify-center flex xl:h-[33rem]">
-        <img src="images/projects/{imageName}-dark.webp" alt="Screenshot of {name}" class="drop-shadow-sm justify-center hidden dark:flex xl:h-[33rem]">
+        <img src="images/projects/{imageName}.webp" alt="Screenshot of {name}" class="dark:hidden drop-shadow-sm justify-center flex xl:h-[50vh]">
+        <img src="images/projects/{imageName}-dark.webp" alt="Screenshot of {name}" class="drop-shadow-sm justify-center hidden dark:flex xl:h-[50vh]">
     </div>
     {:else}
     <div class="justify-center flex items-end">

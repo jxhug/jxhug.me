@@ -54,7 +54,7 @@
     description: "Hey there, I'm James; a developer from California.",
     images: [
         {
-            url: '/images/favicon.webp',
+            url: '/favicon.png',
             width: 128,
             height: 128,
             alt: 'San Francisco'
@@ -66,7 +66,7 @@
     handle: '@diskutility',
     title: 'James Hughes',
     description: "Hey there, I'm James; a developer from California.",
-    image: '/images/favicon.webp',
+    image: '/favicon.png',
     imageAlt: 'San Francisco'
   }}
 />

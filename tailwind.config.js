@@ -33,16 +33,7 @@ export default {
         fontFamily: {
             'apple': ['-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'sans-serif'],
             'manrope': ['Manrope', 'sans-serif'],
-        },
-        colors: {
-            'lightgreen': '#8DD9B2',
-            'normalgreen': '#8DD9B2',
-            'darkgreen': '#3E8277',
-            'darkgray': '#6d6d6d',
-            'darkwhite': '#f2f2f2',
-            'offdarkwhite': '#efefef',
-            'darkergray': '#111111',
-            'offdarkergray': '#1e1e1e',
+            'commitmono': ['CommitMono', 'Manrope', 'sans-serif']
         },
         backgroundImage: {
             'blue-gradient': "linear-gradient(90deg, #60a5fa, #22d3ee, #38bdf8, #60a5fa)",

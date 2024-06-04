@@ -9,3 +9,14 @@
     overflow: auto;
     float: none;
 }
+
+@font-face {
+    font-family: CommitMono;
+    src: url("/fonts/CommitMono-400-Regular.otf") format("opentype");
+}
+
+@font-face {
+    font-family: CommitMono;
+    font-weight: bold;
+    src: url("/fonts/CommitMono-700-Regular.otf") format("opentype");
+}
